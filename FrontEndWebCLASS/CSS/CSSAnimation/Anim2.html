@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        .mydiv{
+            width: 120px;
+            height: 120px;
+            position: relative;
+            background-color: burlywood;
+            animation-name: theanim;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+            /* for alternate it will go front and back  */
+            /* animation-direction: reverse; */
+            /* For reverse it will go front and then back to where it came from then front again */
+            animation-direction: alternate-reverse;
+            /* This will go with the two properties */
+            animation-iteration-count: 5;
+            /* The animation-iteration-count is how many times they will do it until they stop */
+        }
+        @keyframes theanim {
+            from {left: 0;}
+            to {left: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+
+    </div>
+</body>
+</html>

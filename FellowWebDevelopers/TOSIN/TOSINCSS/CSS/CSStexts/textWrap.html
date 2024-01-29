@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT WRAP</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100px;
+            width: 100%;
+            border: 2px solid goldenrod;
+        }
+        #left{
+            width: 250;
+            height: 50px;
+            border-right: 2px solid green;
+            text-align: left;
+            padding: 10px;
+            overflow: hidden;
+        }
+        #right{
+            width: 250;
+            height: 50px;
+            border-right: 2px solid green;
+            text-align: right;
+            padding: 10px;
+            overflow-x: scroll;
+        }
+   </style>     
+</head>
+<body>
+    <div class="container">
+        <div id="left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorem deserunt id quis
+             voluptatibus reiciendis dolor ipsum molestiae, maiores doloribus!
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorem deserunt id quis
+             voluptatibus reiciendis dolor ipsum molestiae, maiores doloribus!
+        </div>
+            <div id="right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorem deserunt id quis
+             voluptatibus reiciendis dolor ipsum molestiae, maiores doloribus!
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorem deserunt id quis
+             voluptatibus reiciendis dolor ipsum molestiae, maiores doloribus!
+            </div>
+                </div>
+</body>
+</html>

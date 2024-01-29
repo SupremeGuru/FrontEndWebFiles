@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Px vs Em vs Rem</title>
+    <style>
+        html{
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        h2{
+            color: blue;
+        }
+        p{
+            font-size: 20px;
+            /* But em multiplies the parent element value by its number you can see it in span (To
+            see the effects, change the value in the font-size of the parent element which is p*/
+            /* but rem multiplies the root elemet value (i.e html i.e why i changed the font-size in the html element
+            so play with the value of the font-size in the html selector) */
+        }
+        span{
+            font-size: 2em;
+        }
+        #span2{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login </h2>
+    <p>Introduction: </p>
+    <p> <span>Lorem ipsum </span><span id="span2">dolor sit amet</span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque culpa iure quibusdam et vel hic numquam maxime porro, vero tempore debitis eligendi corporis asperiores laboriosam unde quis. Tenetur, voluptatibus.</p>
+</body>
+</html>

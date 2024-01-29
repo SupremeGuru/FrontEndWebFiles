@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation shorthand</title>
+    <style>
+        .mydiv{
+            width: 120px;
+            height: 120px;
+            position: relative;
+            background-color: burlywood;
+            animation: theanim 5s ease-in 5 alternate-reverse;
+        }
+        @keyframes theanim {
+            from {left: 0;}
+            to {left: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+</body>
+</html>

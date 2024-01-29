@@ -1,0 +1,7 @@
+@media print {
+    body{
+        color: #ff7200;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+}

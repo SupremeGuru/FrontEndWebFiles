@@ -1,0 +1,18 @@
+What are Operators in Javascript
+
+Operators are symbols or keywords that tell the JavaScript engine to perform some sort of actions. For example, the addition (+) symbol is an operator that tells 
+
+
+
+The arithmetic operators are used to perform common arithmetical operationsm such as addition, subtraction, multiplication etc. Here's a complete list of JavaScript's arithmetic operators:
+
+Operator            Description         Example     Result
++   addition        x+y                 Sum of x and y
+-   subtraction     x-y                 Difference of x and y
+*   multiplication  x * y               Product of x and y.
+/   Division        x / y               Quotient of x and y.
+%   Modulus         x % y               Remainder of x divided by y
+
+
+Augmented Assignment Operators
+Operator    Description                 Example     Result

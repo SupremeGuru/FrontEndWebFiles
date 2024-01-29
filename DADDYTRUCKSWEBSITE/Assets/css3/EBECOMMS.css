@@ -1,0 +1,95 @@
+
+
+/* .a1{
+    width: 60px;
+}
+.a2{
+    width: 33%;
+    height: 250px;
+    border: #E5DADA 5px solid;
+}
+*{
+    color: #E59500;
+    background-color: #E5DADA;
+    opacity: 0.9;
+}
+body{
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    font-size: 15px;
+    font-family: cursive;
+    
+}
+#span1{
+    font-size: x-large;
+}
+.div1{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.li1{
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+}
+ul li a:hover{
+    width: 33%;
+    height: 250px;
+    cursor: pointer;
+    background: #02040F;
+    background-size: 600px;
+    color: #E59500 ;
+}
+ul{
+    padding: 0;
+   list-style: none; 
+}
+
+ul li a{
+    text-decoration: none;
+    color: #E59500;
+    display: inline;
+    padding: 10px 25px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+main nav a:hover{
+    cursor: pointer;
+    background: #840032;
+    color: chartreuse;
+}
+main{
+    padding: 0;
+   list-style: none; 
+}
+main nav{
+    display: inline-block;
+    word-spacing: 5px;
+}
+main nav a{
+    text-decoration: none;
+    color: #E59500;
+    display: inline;
+    padding: 10px 25px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    font-size: xx-small;
+
+}
+h1 small{
+    color: #E59500;
+}
+nav{
+    display: inline-block;
+
+} */
+

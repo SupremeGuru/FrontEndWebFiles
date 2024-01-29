@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TABLE</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td{
+            padding: 15px;
+            text-align: center;
+        }
+        th{
+            background-color: burlywood;
+            color: #fff;
+            font-weight: 800;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:hover{
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>S/N</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>SALARY</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>#230,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>23</td>
+            <td>Female</td>
+            <td>#200,000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lois</td>
+            <td>20</td>
+            <td>Female</td>
+            <td>#145,000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lekan</td>
+            <td>24</td>
+            <td>Male</td>
+            <td>#320,000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Bolu</td>
+            <td>21</td>
+            <td>Male</td>
+            <td>#230,000</td>
+        </tr>
+    </table>
+</body>
+</html>

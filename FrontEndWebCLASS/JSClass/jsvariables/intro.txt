@@ -1,0 +1,2 @@
+Variables are fundamental to all programming languages.
+Variables are used to store data, like string of  text , numbers etc. The data or variable

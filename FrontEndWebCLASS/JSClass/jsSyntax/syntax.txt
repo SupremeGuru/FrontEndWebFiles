@@ -1,0 +1,10 @@
+understanding the js syntax
+the syntax of js is the set of rules that define a correctly structured js prog.
+a js consists of js statements that are placed within the <script></script> html tags in a web page, or within the external js file having .js extension
+
+
+case sensitity in js
+js is case-sensitive. this means that variables, language keywords , function names, and oter identifiers must always be typed with a consistent capitalization of letters
+
+fpr example the variable myVar must be typed myVar not MyVar or myvar.
+Similarly, the method name getElementById() must be typed with the exact case not as getElementByID()

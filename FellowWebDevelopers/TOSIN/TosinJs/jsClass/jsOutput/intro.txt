@@ -1,0 +1,8 @@
+Generating output in js
+
+There are certain situations in which you may need to generate output from your js code. For example, you might want to see the value of variable, or write a message to browser console to help you debug an issue in your running js code, and so ono.
+
+1. document object
+2. alert method
+3.tittle property of document object
+4. console object

@@ -1,0 +1,4 @@
+In a radial gradient color emerge from a single point and smoothly spread outward in a circular or elliptical shape rather 
+than fading from one color to another in a single direction as with linear gradients. 
+
+radial-gradient(shape size at position, color-stop1, color-stop2, ...);

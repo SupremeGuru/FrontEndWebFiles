@@ -1,0 +1,194 @@
+button{
+    background-color: yellow;
+    position: absolute;
+    left: 75%;
+    bottom: 110px;
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+    border-style: none;
+    z-index: 2;
+    font-size: x-small;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+.div2{
+    background-color: crimson;
+    opacity: 0.85;
+    border-radius: 20px;
+    height: 250px;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+.img{
+    position: relative;
+    width: 35.5%;
+    height: 250px;
+    border-radius: 30px;
+}
+#img1{
+    left: 190px;
+}
+#img2{
+    left: 200px;
+
+}
+
+#input1{
+    left: 40%;
+    bottom: 245px;
+    width: 250px;
+    height: 40px;
+ 
+ }
+ #input2{
+     left: 65%;   
+     bottom: 245px;
+     width: 250px;
+     height: 40px;
+ }
+ #input3{
+     left: 40%;
+     bottom: 180px;
+     width: 250px;
+     height: 40px;
+ }
+ #input4{
+     left: 65%;
+     bottom: 180px;
+     width: 115px;
+     height: 40px;
+ }
+ #input5{
+    left: 75%;
+    bottom: 180px;
+    width: 115px;
+    height: 40px;
+   
+ }
+ #input6{
+    display: inline-block;
+    width: 103px;
+    height: 50px;
+    right: 16.5%;
+    bottom: 105px;
+    background-color: crimson;
+    opacity: 0.85;
+    z-index: 1;
+    border-color: yellow;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+ }
+ .input{
+     position: absolute;
+     display: inline-block;
+     border-radius: 10px;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: left;
+     background-color: whitesmoke;
+     border-style: none;
+     /* width: 350px;
+     height: 30px; */
+ }
+hr{
+    border-color: yellow;
+    width: 170px;
+    position: relative;
+    right: 380px;
+}
+span{
+    z-index: 2;
+}
+#money1{
+    color: green;
+    font-weight: bolder;
+    position: absolute;
+    right: 1070px;
+    top: 210px;
+}
+p{
+    display: inline-block;
+    color: white;
+
+}
+.p1{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+#pA1{
+    top: 10px;
+    left: 220px;
+    position: absolute;
+}
+#pA2{
+    top: 10px;
+    right: 500px;
+    position: absolute;
+}
+#pA3{
+    top: 80px;
+    right: 915px;
+    position: absolute;
+    font-size: 20px;
+}
+#pA4{
+    top: 110px;
+    right: 1065px;
+    position: absolute;
+    font-size: 20px;
+    
+}
+#pA5{
+    top: 80px;
+    right: 425px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#pA6{
+    top: 110px;
+    right: 573px;
+    position: absolute;
+    font-size: 20px;
+}
+#per1{
+    position: absolute;
+    right: 1058px;
+    top: 235px;
+    
+}
+#money2{
+    color: green;
+    font-weight: bolder;
+    position: absolute;
+    right: 582px;
+    top: 210px;
+}
+#per2{
+    position: absolute;
+    right: 568px;
+    top: 235px;
+    
+}
+
+svg{
+    position: absolute;
+    z-index: 1;
+}
+
+#svg1{
+    right: 940px;
+    top: 135px;
+}
+
+#svg2{
+    right: 450px;
+    top: 135px;
+}

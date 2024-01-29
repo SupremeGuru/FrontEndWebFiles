@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Auto</title>
+    <style>
+        .outer-container{
+            display: flex;
+            height: 200px;
+            color: white;
+            background: gold;
+        }
+        .box{
+            padding: 10px;
+            flex: 1 0 auto;
+        }
+        .larger{
+            background: yellowgreen;
+            flex: 3 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+
+        <div class="box">Box</div>
+        <div class="box larger">Larger Box</div>
+        <div class="box">Box</div>
+        <div class="box larger">Larger Box</div>
+    </div>
+</body>
+</html>

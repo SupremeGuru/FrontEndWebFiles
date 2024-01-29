@@ -1,0 +1,3 @@
+Generating Output in Javascript
+There are certain situations in which you may need to generate Output from your Javascript code. For 
+example, you might want to see the value of variable, or write a message to browser 

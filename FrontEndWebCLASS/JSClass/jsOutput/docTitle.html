@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+    <script>
+        let myName = 'Kolawole';
+        let myAge = 23 ;
+
+       
+       
+        //  Template literals
+        var detail = `<h1 class=literal>My name is ${myName} my age is ${myAge}</h1>`
+        // The document.write shows the output on the website (i.e where the html is usually displayed)
+        document.write(detail)
+
+
+        // now using the title tab
+        document.title = myName
+
+    </script>
+    <!-- I tried to style the Template Literal -->
+    <style>
+        .literal{
+            color: blue;
+            font: bold x-large ;
+        }
+    </style>
+    <!-- And the styling worked -->
+</body>
+</html>

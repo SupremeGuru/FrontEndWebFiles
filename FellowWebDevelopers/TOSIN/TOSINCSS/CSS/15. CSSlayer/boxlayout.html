@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        .con{
+            position: relative;
+        }
+        .grenn{
+            top: 30px;
+            left: 60px;
+            background: green;
+            z-index: 2;
+        }
+        .blue{
+            top: 60px;
+            left: 30px;
+            background: blue;
+            z-index: 3;
+        }
+        .red{
+            background: #ff0000;
+            z-index: 2;
+            left: 100px;
+            right: 100px;
+        }
+        .container{
+            position: relative;
+            left: 80%;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            opacity: 0.9;
+            position: absolute;
+        }
+        .red{
+            background: #ff0000;
+            z-index: 2;
+            left: 100px;
+            right: 100px;
+        }
+        .green{
+            top: 30px;
+            left: 60px;
+            background: green;
+            z-index: 2;
+        }
+        .blue{
+            top: 60px;
+            left: 30px;
+            background: blue;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <div class="con">
+        <div class="box grenn"></div>
+        <div class="box blue"></div>
+        <div class="box red"></div>
+    </div>
+</body>
+</html>
