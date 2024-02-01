@@ -1,0 +1,7 @@
+Understanding Events and Event Handlers
+An event is something that happens when user interact with the web page, such as when he clicked a link or button, entered text into an input box or textarea, made selection in a select box , pressed key on the keyboard , moved the mouse pointer, submits a form, etc. In some cases, the Browser itself can trigger the events, such as the page load and unload events.
+Types of events:
+Mouse Events
+keyboard events 
+form events
+window events
