@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function displayWindowSize(){
+            var windowWidth = window.outerWidth;
+            var windowHeight = window.outerHeight;
+            var text = "Window size: width= " + windowWidth + ", height= " + windowHeight;
+            document.getElementById("result").innerHTML = text;
+        }
+        window.onresize = displayWindowSize;
+    </script>
+</body>
+</html>
