@@ -1,0 +1,11 @@
+What is String in JavaScript
+A string is a sequence of letters, numbers, special characters and  arithemetic values or combination of all. Strings can be created by enclosing the string literal (i.e string characters) either within single quotes ( ' ) or double quotes ( " ),
+
+let userName = "App123 ! le"
+let emoji = '&#128516;'
+let password = 'abcd1234'
+let receiptNum = '324423'
+let userAccount = '09322222309'
+
+JavaScript Escape Sequences
+Escape Sequences are also useful for situations wher you want to use characters

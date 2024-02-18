@@ -1,2 +1,13 @@
-Variables are fundamental to all programming languages.
-Variables are used to store data, like string of  text , numbers etc. The data or variable
+variable are fundamentaal to all programming languages. Variables are used to store data, like string of text, numbers, etc. The data or value stored in the variables can be set, updated, and retrieved whenever needed. In general, variables are symbolic names for values.
+
+You can create a variable with the var keyword, whereas the assignment operator (=) is used to assign value to a variable, like this:
+
+var variableName = value;
+let age = 12;
+const salary;
+salary = 123456.56
+
+Naming Conventions for Js Variables
+these are the following rules for naming a js variable
+
+A variable

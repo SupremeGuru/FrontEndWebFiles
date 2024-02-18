@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even Number</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let evenNumber1 = parseInt(prompt("Your begginning even number: "));
+    let evenNumber2 = parseInt(prompt("Your stopping even number: "));
+
+    let index = evenNumber1;
+    if (evenNumber1 % 2 === 0) {
+        do {
+        console.log(evenNumber1);
+        evenNumber1+=2
+    } while (index <= evenNumber2);
+    }else{
+        alert("Put in an even number");
+        evenNumber1 = parseInt(prompt("Your begginning even number: "));
+    }
+</script>
+</html>
