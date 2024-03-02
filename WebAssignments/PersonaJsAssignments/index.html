@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Assignment 1</title>
+</head>
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+        background: blue ;
+        text-align: center;
+        border-radius: 5vh;
+        border: blue 2vh;
+    }
+    #btn1{
+        background: yellow ;
+        text-align: center;
+        border-radius: 5vh;
+        border: green 2vh;
+        border-style: dashed;
+    }
+</style>
+<body>
+    <h1>This prints a square or a triangle</h1>
+
+
+    <span id="shape1"></span>
+    <button id="btn1">Change Shape</button>
+
+
+    <script>
+        const squareFormer = [4,4,4,4];
+        const triangleFormer = [1,2,3,4];
+        var shapeOutput = "";
+        const shapeEnd = 4;
+        for (let index = 0; index<= shapeEnd; index++){
+            const unitSquareFormer = squareFormer[index];
+            const unitTriangleFormer = triangleFormer[index];
+            for (let index2 = 0; index<= unitSquareFormer; index2++){
+                shapeOutput += "* ";
+            }
+        }
+        console.log(shapeOutput);
+        document.getElementById("shape1").innerHTML = shapeOutput;
+    </script>
+</body>
+</html>

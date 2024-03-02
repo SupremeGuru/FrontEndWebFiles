@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Class Work</title>
+</head>
+<body>
+    
+
+    <script>
+        let balance = 0;
+        let accountNumber = "4190"
+        function saveAccount(accountNumber, amount){
+            if (accountNumber === "4190"){
+                balance = balance + amount;
+                console.log(`Your balance is $${balance}\nThank You for banking with us`);
+            }else{
+                console.log("incorrect account number");
+                console.log("Restart program \nPut in correct account number: ");
+            }
+        }
+        saveAccount("4190", 900);
+    </script>
+</body>
+</html>

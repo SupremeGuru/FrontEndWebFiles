@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #SaveAccount{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: blue;
+            border: 0.5vh;
+            border-radius: 0.5vh;
+        }
+    </style>
+</head>
+<body>
+    <button id="SaveAccount" onclick="saveAccount(this)">Save Account Balance</button>
+
+    <script>
+            var accountAuthencity = false;
+            function accountAunthenticator(accountNumber){
+            if (accountNumber === "4190"){
+                accountAuthencity = true;
+                console.log("correct pin");
+                return `Your balance is ${balance}`;
+            }else{
+                accountAuthencity = false;
+                console.log("incorrect pin");
+                console.log("Restart program \n Put in correct pin: ");
+            }
+        }
+        accountAunthenticator(accountNumber);
+    </script>
+</body>
+</html>

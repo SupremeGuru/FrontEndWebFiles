@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal 2 Js Assignment
+    </title>
+    <style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+        background: blue ;
+        text-align: center;
+        border-radius: 5vh;
+        border: blue 2vh;
+    }
+    #btn1{
+        background: yellow ;
+        text-align: center;
+        border-radius: 5vh;
+        border: green 2vh;
+        border-style: dashed;
+    }
+    </style>
+</head>
+<body>
+    
+<h1>Pyramid Pattern</h1>
+<div id="shapeOutput"></div>
+    <script>
+        var pyramidHeight = parseInt(prompt("The Pyramids Height: ")) + 1;
+        var pyramidOutput = "";
+        // for(let index= 0; index <= pyramidHeight; index++ ){
+        //     pyramidOutput = pyramidOutput + " ";
+        //     for(let whiteSpaceIndex = 0; whiteSpaceIndex<= pyramidHeight; whiteSpaceIndex++)
+        //         pyramidOutput = pyramidOutput + "*";
+        //         console.log(pyramidOutput);
+        //         document.getElementById("shapeOutput").innerHTML = pyramidOutput
+        // }
+        for(let index = 1; index>=pyramidHeight; pyramidHeight--){
+            pyramidOutput = pyramidOutput + "*";
+            console.log(pyramidOutput);
+        }
+    </script>
+</body>
+</html>
