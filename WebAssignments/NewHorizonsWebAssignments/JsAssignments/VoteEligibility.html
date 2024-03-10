@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Eligiblility</title>
+    <style>
+        #voteOutput{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 75vh;
+            height: 60vh;
+            color: white;
+            background-color: purple;
+            margin: 0 auto;
+        }
+        button{
+            background-color: red;
+            border-radius: 2vh;
+            border: green;
+            width: 35vh;
+            height: 10vh;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="runVoteEligibility()">Check Your Vote Eligiblility</button>
+<div id="voteOutput">
+    whether you are to vote shows here:
+</div>
+    <script>
+
+
+        function eligibilityToVote(votersAge,votersNationality){
+            if(votersAge >= 18 && votersNationality === "nigerian"){
+                document.getElementById("voteOutput").innerHTML=("You are eligible to vote(✔)");
+                console.log("You are eligible to vote(✔)");
+            }else if(votersAge === 17 && votersNationality === "nigerian"){
+                document.getElementById("voteOutput").innerHTML=("Nigerian you are too young too vote(❌)");
+                console.log("Nigerian you are too young too vote(❌)");
+            }else if(votersAge === 17 && votersNationality !== "nigerian"){
+                document.getElementById("voteOutput").innerHTML=("Foreigner you are too young too vote(❌)");
+                console.log("Foreigner you are too young too vote(❌)");
+            }else if(votersAge >= 18 && votersNationality !== "nigerian"){
+                document.getElementById("voteOutput").innerHTML=("Foreigner you can't vote here(❌)");
+                console.log("Foreigner you can't vote here(❌)");
+            }else if (votersAge<17 && votersNationality !== "nigerian"){
+                document.getElementById("voteOutput").innerHTML=("Foreigner you are not eligible to vote(❌)");
+                console.log("Foreigner you are not eligible to vote(❌)");
+            }else{
+                document.getElementById("voteOutput").innerHTML=("Nigerian you are not eligible to vote(❌)");
+                console.log("Nigerian you are not eligible to vote(❌)");
+            }
+        }
+        function runVoteEligibility(){
+        let votersAge = parseInt(prompt("Your Age: "));
+        let votersNationality = prompt("Your nationality(e.g Canadian): ").toLowerCase();
+        eligibilityToVote(votersAge,votersNationality);
+        }
+    </script>
+</body>
+</html>

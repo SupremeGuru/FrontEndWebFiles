@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 2</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const PI = 3.142;
+        var radius = parseFloat(prompt("The radius of the cylinder(m): "));
+        var height = parseFloat(prompt("The height of the cylinder(m): "));
+        function areaOfCylinderCalculator(PI, radius, height){
+            var areaOfCylinder = ((2)*(PI)*((radius)**(2))+(2)*(PI)*(radius)*(height));
+            return console.log(`The area of your cylinder is ${areaOfCylinder}m2`);
+        }
+        areaOfCylinderCalculator(PI,radius,height);
+
+        function volumeOfCylinderCalculator(PI,radius,height) {
+            var volumeOfCylinder = PI*(radius**2)*height;
+            return console.log(`The volume of your cylinder is ${volumeOfCylinder}m2`);
+        }volumeOfCylinderCalculator(PI,radius,height);
+    </script>
+</body>
+</html>

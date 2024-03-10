@@ -1,0 +1,37 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-bar> ul>li {
+    list-style: none;
+    display: inline-block;
+    background-color: blue;
+    border-radius: 10%;
+    padding: auto 10vh;
+    border: none;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    padding: auto 15%;
+    margin-left: 60%;
+}
+.products-tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.products > img{
+    width: 20vh;
+    height: 20vh;
+}
+.products > button{
+    background-color: green;
+    color: white;
+    width: 14vh;
+    border: green;
+    transition: ease;
+}
+.products > button:hover{
+    background-color: yellow;
+}

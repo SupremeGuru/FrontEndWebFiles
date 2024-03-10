@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Dispenser </title>
+</head>
+<body>
+    
+    <script>
+        const fuelRate = 600;
+        alert(`The current fuel rate is ${fuelRate}\nClick Enter to continue: `);
+        var buyersQuantityInLitre = parseFloat(prompt("The quantity of fuel you want to buy in litre: "));
+        var sizeOfFuelContainer = parseFloat(prompt("The size of your fuel container in litre: "));
+        function fuelDispenserCalculator(buyersQuantityInLitre=0, sizeOfFuelContainer=0){
+            if (sizeOfFuelContainer <  buyersQuantityInLitre){
+                return console.log(`Your container can't occupy ${buyersQuantityInLitre}litres`);
+            }else if(sizeOfFuelContainer > buyersQuantityInLitre){
+                return console.log(`Your have bought ${buyersQuantityInLitre}litre`);
+            }else{
+                return console.log("Check your input");
+            }
+        }fuelDispenserCalculator(buyersQuantityInLitre,sizeOfFuelContainer);
+    </script>
+</body>
+</html>

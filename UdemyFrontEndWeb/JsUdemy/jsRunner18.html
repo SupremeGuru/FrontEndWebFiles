@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Runner18</title>
+    <style>
+        .coolTitle{
+            text-align: center;
+            font-family: 'Oswald',Helvetica,sans-serif;
+            font-size: 40px;
+            transform: skewY(-10deg);
+            letter-spacing: 4px;
+            word-spacing: -8px;
+            color: tomato;
+            text-shadow: 
+            -1px -1px 0 firebrick,
+            -2px -2px 0 firebrick,
+            -3px -3px 0 firebrick,
+            -4px -4px 0 firebrick,
+            -5px -5px 0 firebrick,
+            -6px -6px 0 firebrick,
+            -7px -7px 0 firebrick,
+            -8px -8px 0 firebrick,
+            -30px 20px 4px dimgrey;
+        }
+    </style>
+</head>
+<body>
+    <div>I am a div tag</div>
+    <p class="welfare">I have a class in my paragraph tag</p>
+    <p id="second">I have an id in my paragraph</p>
+    <ul>
+        <li random="23">Notebook</li>
+        <li>Ear Phones</li>
+        <li>Ipad</li>
+        <li>Virtual reality headset</li>
+        <li>Wireless Mouse & Keyboard</li>
+        <li>Router</li>
+    </ul>
+    <script>
+        // Document objects
+        document.getElementsByTagName("div");// This collects the tag name you specify in the brackets in "" and changes them to what it is equaled to
+        document.getElementsByClassName("welfare");
+        document.getElementById('second');
+        document.querySelector('li');
+        document.querySelectorAll('li,h1,div');
+        document.querySelectorAll('li,h1,div')[0];
+        document.querySelector("li").getAttribute("random"); // This shows the attribute random = 23
+        document.querySelector("li").setAttribute("random", "1000"); // This changes the attribute random which is 23 to 1000 
+        document.querySelector("li").getAttribute("random");  // This display random=23 in the console
+        //This changes the style background
+        document.querySelector("h1").style.background="yellow";
+// Remember to load all this line by line in the console
+    </script>
+</body>
+</html>

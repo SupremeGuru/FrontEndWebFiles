@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        'use Strict'
+        // Function definition
+        function hello(){
+            console.log('Hello ');
+            console.log('I am');
+            console.log(34*4);
+        }
+        //Function calling
+        hello('Kola',32); // It won't work if there is no parameters in the function
+
+        // But when there is parameters and arguments it will work
+        function hello2(name, age){
+            console.log('Hello ' + name);
+            console.log('I am' + age);
+            console.log(34*4);
+        }
+        hello2("Kola", 32);
+        hello2(); // Without arguments it will say undefined
+        function hello3(name="paul",age=0) {
+            // But with a default parameter in the function we can call it without arguments
+            // 
+            console.log('Hello ' + name);
+            console.log('I am' + age);
+            console.log(34*4);
+        }
+    </script>
+</body>
+</html>

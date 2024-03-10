@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #bmiOutput{
+            text-align: center;
+            width: 75vh;
+            height: 60vh;
+            display: flex;
+            color: white;
+            background-color: red;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        #BMIbutton{
+            background-color: blue;
+            border-radius: 2vh;
+            border: green;
+            width: 25vh;
+            height: 10vh;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="BMIbutton" onclick="runBmiConverter(this)">Check Your BMI</button>
+    <div id="bmiOutput">Your BMI Shows here: </div>
+
+    <script>
+        var BMI = 0;
+        function bmiConverterInKgAndMetre(userWeight=0,userHeight=0){
+            BMI = userWeight/userHeight;
+            console.log(`Your BMI is ${BMI}`);
+            document.getElementById("bmiOutput").innerHTML=`Your BMI is ${BMI}`;
+            if (BMI < 18.5) {
+                document.getElementById("bmiOutput").innerHTML="You are underweight";
+                return console.log("You are underweight");
+            }else if (BMI>=18.5 && BMI<=25.0){
+                document.getElementById("bmiOutput").innerHTML="You are normalweight";
+                return console.log("You are normalweight");
+            }else if (BMI > 25.0){
+                document.getElementById("bmiOutput").innerHTML="You are overweight(obese)";
+                return console.log("You are overweight(obese)");
+            }else{
+                document.getElementById("bmiOutput").innerHTML='Click the button \nAnd\nPut in values';
+                return console.log('Click the button \nAnd\nPut in values');
+            }
+        }
+        function bmiConverterInInchAndLbs(userWeightLbs=0,userHeightInch=0){
+            BMI = 703*(userWeightLbs/userHeightInch);
+            document.getElementById("bmiOutput").innerHTML=`Your BMI is ${BMI}`
+            console.log(`Your BMI is ${BMI}`);
+            if (BMI < 18.5) {
+                document.getElementById("bmiOutput").innerHTML=("You are underweight");
+                return console.log("You are underweight");
+            }else if (BMI>=18.5 && BMI<=25.0){
+                document.getElementById("bmiOutput").innerHTML="You are normalweight";
+                return console.log("You are normalweight");
+            }else if (BMI > 25.0){
+                document.getElementById("bmiOutput").innerHTML="You are overweight(obese)";
+                return console.log("You are overweight(obese)");
+            }else{
+                document.getElementById("bmiOutput").innerHTML='Click the button \nAnd\nPut in values';
+                return console.log('Click the button \nAnd\nPut in values');
+            }
+        }
+        function runBmiConverter(){
+        var unitsSelector = parseInt(prompt(`Type 1 for weight in (kg) and height in (m):\nOr\nType 2 for weight in (lbs) and height in (inch):`));
+        if (unitsSelector === 1){    
+        var userHeight = parseFloat(prompt("Your height in (m): "));
+        var userWeight = parseFloat(prompt("Your weight in (kg): "));
+            bmiConverterInKgAndMetre(userWeight=0,userHeight=0);
+        }else if(unitsSelector === 2){
+            var userHeightInch = parseFloat(prompt("Your height in (inch): "));
+            var userWeightLbs = parseFloat(prompt("Your weight in (Lbs): "));
+            bmiConverterInInchAndLbs(userWeightLbs=0,userHeightInch=0);
+        }else{
+            document.getElementById("bmiOutput").innerHTML="Type 1 for weight in (kg) and height in (m):\nType 2 for weight in (lbs) and height in (inch):";
+            console.log("Type 1 for weight in (kg) and height in (m):\nType 2 for weight in (lbs) and height in (inch):");
+            console.log("Then run program again");
+        }
+        }
+    </script>
+</body>
+</html>
