@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // This logs all the even numbers greater than 4
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+        function filterEvenNum(evenNumbers){
+            if(evenNumbers%2 === 0 && evenNumbers > 4){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        let evenNumbersOutput = numbers.filter(filterEvenNum);
+        console.log(evenNumbersOutput);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const salad = ["🍅","🍄","🥦","🥒","🌽","🥕","🥑"];
+        let itemsIterator = salad.entries();
+        // itemsIterator.forEach(val => {
+        //     console.table(val);    
+        // }); // uncomment and see what happens in the console
+        let val2 = itemsIterator.next().value;
+        console.log(val2);
+        let val3 = itemsIterator.next().value;
+        console.log(val3);
+        let val4 = itemsIterator.next().done;
+        console.log(val4);
+
+        let userNames = ['Pauline','Olatayo','Musa','Eze','Yusuf'];
+
+        function CheckChar(chr){
+            return chr.length > 2;
+        }
+        let check = userNames.every(CheckChar);
+        console.log(check);
+
+        const ageArray = [34, 23, 20, 26, 12];
+        function CheckAge(ageAbove20){
+            return ageAbove20 > 20;
+        }
+        let arrayAgeChecker = ageArray.every(CheckAge);
+        console.log(arrayAgeChecker);
+    </script>
+</body>
+</html>

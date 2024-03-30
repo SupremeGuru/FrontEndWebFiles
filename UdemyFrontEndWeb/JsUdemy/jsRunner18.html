@@ -24,12 +24,16 @@
             -8px -8px 0 firebrick,
             -30px 20px 4px dimgrey;
         }
+        .done{
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body>
-    <div>I am a div tag</div>
+    <h1>I am a heading 1 tag</h1>
     <p class="welfare">I have a class in my paragraph tag</p>
     <p id="second">I have an id in my paragraph</p>
+    <button id="button">Click Me!</button>
     <ul>
         <li random="23">Notebook</li>
         <li>Ear Phones</li>
@@ -38,7 +42,7 @@
         <li>Wireless Mouse & Keyboard</li>
         <li>Router</li>
     </ul>
-    <script>
+    <script type="text/javascript" src="Emmajs18.js">
         // Document objects
         document.getElementsByTagName("div");// This collects the tag name you specify in the brackets in "" and changes them to what it is equaled to
         document.getElementsByClassName("welfare");
@@ -51,7 +55,27 @@
         document.querySelector("li").getAttribute("random");  // This display random=23 in the console
         //This changes the style background
         document.querySelector("h1").style.background="yellow";
+        // The code below makes it a variable h1
+        var h1 = document.querySelector("h1");
+        h1;// This will print the html value of h1
+        h1.className = 'coolTitle'
+
+        var li = document.querySelector("li");
+        li.classList("done");
+        li.classList.remove("done");
+        li.classList.add("done");
+        li.classList.toggle("done")
+        document.querySelectorAll("li")[1];
+        document.querySelectorAll("li")[1].parentElement.parentElement;
+        document.querySelectorAll("li")[1].parentElement.parentElement.children;
+        // This is a cache selector
+        var h1 = document.querySelector("h1");
 // Remember to load all this line by line in the console
+// Or you can put the above code in the function below and run your web page
+        function runAboveCode(){
+
+        }
+        runAboveCode(); 
     </script>
 </body>
 </html>

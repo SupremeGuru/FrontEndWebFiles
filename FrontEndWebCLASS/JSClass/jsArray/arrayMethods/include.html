@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let userNames = ['Pauline','Olatayo','Musa','Eze','Yusuf'];
+         function searchVal(val){
+            val[3]
+            return val.length > 4;
+         }
+         let returnVal = userNames.find(searchVal,1);
+         console.log(returnVal);
+
+         let usersInfo = [
+            {name:"Bola",age:23},
+            {name:"Kola",age:55},
+            {name:"Tola",age:37},
+            {name:"Olawale",age:41},
+            {name:"Bolu",age:19,}//Now we want to filter out all the elderly people
+         ]
+         let oldPeople = (person)=> person.age > 18;
+         oldPeople = usersInfo.includes({name : "Bolu", age:19});// find returns the first object that passes the criteria
+         console.log(oldPeople);
+
+         let oldPeople1 = (person)=> person.age > 18;
+         oldPeople1 = usersInfo.findIndex(oldPeople1);// find returns the first object that passes the criteria
+         console.log(oldPeople1);
+    </script>
+</body>
+</html>
