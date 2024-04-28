@@ -20,6 +20,7 @@ const mapArray  = array.map((num/*NB:You can remove this brackets only if it is 
 console.log('map', mapArray);
 
 // We can also use all these on strings
+const mapArray2 =  array.filter(num => num * 3);
 
 //with forEach you need .push or .pop and a new array to put all those values but with map it instantly does all that for you 
 // as long as you use the return statement or else you get undefined in all your values

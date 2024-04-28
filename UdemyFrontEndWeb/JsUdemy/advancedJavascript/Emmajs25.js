@@ -20,6 +20,7 @@ const filterArray  = array.filter((num/*NB:You can remove this brackets only if 
 console.log('filter', filterArray);
 
 // We can also use all these on strings
-
+// We can also do the short way 
+const filterArray2 =  array.filter(num => num > 3);
 //with forEach you need .push or .pop and a new array to put all those values but with filter it instantly does all that for you 
 // as long as you use the return statement or else you get undefined in all your values
