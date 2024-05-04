@@ -23,3 +23,5 @@ const flattened3 = [[0,1], [2,3], [4,5]].reduce(
         return accumulator.concat(array)
     }, []
 );
+
+// NB: To always remove debugger keyword before deployment

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const fuelRate = 600;
+        let fuelRatePrompter = fuelRate;
+        alert(`The current fuel rate is ${fuelRatePrompter}\nClick Enter to continue: `);
+        var buyersQuantityInLitre = parseFloat(prompt("The quantity of fuel you want to buy in litre: "));
+        var sizeOfFuelContainer = parseFloat(prompt("The size of your fuel container in litre: "));
+        function fuelDispenserCalculator(buyersQuantityInLitre=0, sizeOfFuelContainer=0){
+            var fuelBeingBought = buyersQuantityInLitre * fuelRate;
+            if (sizeOfFuelContainer <  buyersQuantityInLitre){
+                return console.log("Your container can't occupy the fuel you want to buy");
+            }else if(sizeOfFuelContainer > buyersQuantityInLitre){
+                var doYouWantToBuy = prompt(`Do you want to spend ${fuelBeingBought}$(y/n): `)            
+                if (doYouWantToBuy === "y"){
+                    alert(`You have bought ${buyersQuantityInLitre} for ${fuelBeingBought} Thank You`);
+                    return console.log(`You have bought ${buyersQuantityInLitre}litres for ${fuelBeingBought}$ Thank You`);
+                }else if (doYouWantToBuy === "n"){
+                    return console.log("Your transaction has been cancelled");
+                }else{
+                    return console.log("You didn't type y or n");
+                }
+            }else{
+                console.log("You didn't put a number\nRun the program again");
+            }
+        }fuelDispenserCalculator(buyersQuantityInLitre,sizeOfFuelContainer);
+    </script>
+</body>
+</html>
