@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation </title>
+    <style>
+        div{
+            width: 60px;
+            height: 50px;
+            background-color: rgb(80, 10, 27);
+            position: relative;
+            animation-name:  myMove;
+            animation-duration: infinity;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+        }
+        @keyframes  myMove {
+            from{
+                left: 0px;
+                
+            }
+            to{
+                right: 1000px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="myMove">Shaking</div>
+</body>
+</html>
