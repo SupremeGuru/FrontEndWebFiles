@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        // Global variable
+        var counter = 0;
+
+        // A function dedication to manipulate the 'counter' variable
+        function makeCounter() {
+            return counter += 1;
+        }
+
+        // Calling the function
+        makeCounter()
+        document.write(counter + '<br>'); // Prints : 1
+
+        makeCounter()
+        document.write(counter + '<br>'); // Prints : 2
+
+        // Trying to manipulate the 'counter' variable from outside
+        counter = 10;
+        document.write(counter);
+    </script>
+</body>
+</html>

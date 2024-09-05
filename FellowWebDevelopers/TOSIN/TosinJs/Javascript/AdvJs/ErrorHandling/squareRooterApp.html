@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Rooter App</title>
+  </head>
+  <body>
+    <script>
+      function squareRoot(number) {
+        // Throw error if number is negative
+        if (number < 0) {
+          throw new Error(
+            "Sorry, can't calculate square root of a negaive number."
+          );
+        } else {
+          return Math.sqrt(number);
+        }
+      }
+
+      try {
+        squareRoot(16);
+        squareRoot(625);
+        squareRoot(9);
+        squareRoot(100);
+
+        // If error is thrown following line won't execute
+        alert("All calculations are performed successfully.");
+      } catch (e) {
+        // Handling the error
+        alert(e.message);
+      }
+    </script>
+  </body>
+</html>

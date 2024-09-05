@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES6 syntax
+        for(let i = 0; i < 5; i++){
+            console.log(i) // 0 1 2 3 4
+        }
+        console.log(i);  // undefined
+
+        //ES5 syntax
+        for(var i = 0; i < 5; i++){
+            console.log(i)  // 0 1 2 3 4
+        }
+        console.log(i) // 5
+
+
+        const PI = 3.14;
+        console.log(PI); // 3.14
+
+        // PI = 10
+        // console.log(PI); // error
+
+        // Changing object property value
+        const PERSON = {name: "Peter", age: 28};
+        document.write(PERSON.age + "<br>") // 28
+        PERSON.age = 30
+        document.write(PERSON.age + "<hr>")  // 30
+
+        // Changing array element
+        const COLORS = ["red", "green", "blue"];
+        document.write(COLORS[0] + "<br>")  // red
+
+        COLORS[0] = "yellow";
+        document.write(COLORS[0]);  // yellow
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Data types in Javascript
+Data types basically specify what kind of data cn be stored and manipulated within a program.
+
+There are six basic data types in Javascript which can be divided intro three main categories: Primitive (or primary),
+composite (or reference), and special data types. String, Number, and Boolean are primitive data types.
+Objects, Array, and Function (which are all types of objects) are composite data types. Whereas Undefined and Null are
+special data types.
+
+Primitive data types can hold only one value at a time, whereas composite data types can hold collection of values
+and more complex entities.
+ 

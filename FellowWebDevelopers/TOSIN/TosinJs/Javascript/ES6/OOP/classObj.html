@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(id, name, age) {
+                this.id = id;
+                this.name = name;
+                this.age = age
+            }
+
+
+            getInfo = function () {
+                return `ID : ${this.id}, Name : ${this.name}, Age : ${this.age}`
+            }
+        }
+
+        let p1 = new Person('001', 'Paul', 23)
+        p1.id = 12 // Prop Mutation
+        p1.name = 'Kola'
+
+        let info = p1.getInfo()
+        console.log(info);
+
+        let p2 = new Person('002', 'James', 30)
+        let info2 = p2.getInfo()
+        console.log(info2);
+    </script>
+</body>
+
+</html>

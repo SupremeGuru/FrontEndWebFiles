@@ -1,0 +1,16 @@
+What is JSON?
+JSON stands for Javascript Object Notation. JSON is extremely lightweight data-interchange format 
+for data exchange between server and cient which is quick and easy toparse and generate.
+
+Like XML, JSON is also a text-based format that is easy to write and easy to understand for both humans 
+and computers, but inlike XML,JSON data structure occupy less bandswitch than their XML versions.
+JSON is based on two basic structures:
+
+Object: This is defined as an unordered collection of key/value pairs(i.e. key:value).Each object 
+begins with a aleft curly bracket{and ends with a right curly bracket}. Multiple key/value pairs are 
+seperated by a comma, .
+
+Array: This is defines as an ordered list of value. An array begins with a left bracket
+[and ends with a right bracket]. Values are seperated by a comma, .
+
+In JSON, property names or keys are always strings, while the value numbers, true or false, null or even object.

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userData = {
+            id: 1,
+            name: "Paul",
+            age: 23,
+            email: "kkk@bbb.com",
+        };
+
+        let jsData = JSON.stringify(userData);
+        sessionStorage.setItem("user", jsData);
+    </script>
+</body>
+
+</html>

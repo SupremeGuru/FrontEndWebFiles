@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(Boolean(0) + "<br>"); // Prints: 10.5
+        document.write(Boolean(null) + "<br>"); // Prints: 1
+        document.write(Boolean(false) + "<br>"); // Prints: 0
+        document.write(Boolean(undefined) + "<br>"); // Prints: 0
+        document.write(Boolean(NaN) + "<br>"); // Prints: 123
+        document.write(Boolean("") + "<br>"); // Prints: 0
+        document.write(Boolean("0") + "<br>"); // Prints: 0
+        document.write(Boolean(1) + "<br>"); // Prints: 12.3
+        document.write(Boolean(true) + "<br>"); // Prints: 255 (hexadecimal representation)
+        document.write(Boolean(false) + "<br>"); // Prints: NaN
+        document.write(Boolean("Hello World!") + "<br>"); // Prints: NaN
+        document.write(Boolean(" ")); // Prints: true
+    </script>
+</body>
+</html>

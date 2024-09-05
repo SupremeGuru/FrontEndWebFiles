@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            inventore voluptatum, debitis aperiam, et porro qui consectetur officia
+            exercitationem amet dolore odit vel dignissimos eius!
+        </p>
+    </div>
+
+    <script>
+        let mypara = document.getElementById("para")
+        mypara.parentNode.removeChild(mypara)
+    </script>
+</body>
+
+</html>

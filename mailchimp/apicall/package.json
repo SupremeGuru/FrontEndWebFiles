@@ -1,0 +1,12 @@
+{
+  "name": "apicall",
+  "version": "1.0.0",
+  "description": "to try to make an api request with mailchimp transactional",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "supreme guru",
+  "license": "ISC"
+}

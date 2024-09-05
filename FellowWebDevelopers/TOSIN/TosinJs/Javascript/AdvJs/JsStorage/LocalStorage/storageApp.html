@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage App</title>
+</head>
+
+<body>
+    <h1 class="userName"></h1>
+    <h2 class="userAge"></h2>
+
+    <input type="text" class="name" placeholder="Enter name here" />
+    <button class="saveNameBtn">Save Name</button>
+
+    <br />
+
+    <input type="text" class="age" placeholder="Enter age here" />
+    <button class="saveAgeBtn">Save Age</button>
+
+    <script>
+        const userNameText = document.querySelector(".userName");
+        const userAgeText = document.querySelector(".userAge");
+        const saveNameButton = document.querySelector(".saveNameBtn");
+        const saveAgeButton = document.querySelector(".saveAgeBtn");
+
+        saveNameButton.addEventListener("click", function () {
+            const userName = document.querySelector(".name").value;
+            userNameText.textContent = userName;
+            localStorage.setItem("name", userName);
+        });
+
+        saveNameButton.addEventListener("click", function () {
+            const userAge = document.querySelector(".age").value;
+            userAgeText.textContent = userAge;
+            localStorage.setItem("age", userAge);
+        });
+    </script>
+</body>
+
+</html>

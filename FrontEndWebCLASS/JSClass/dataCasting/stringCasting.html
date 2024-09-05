@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Casting</title>
+</head>
+<body>
+    <script>
+        let isMarried = true;
+        let strRes = String(isMarried);
+        console.log(strRes.toUpperCase());
+
+        document.write(String("10.5") + "<br>"); // Prints: 10.5
+        document.write(String(true) + "<br>"); // Prints: 1
+        document.write(String(false) + "<br>"); // Prints: 0
+        document.write(String(null) + "<br>"); // Prints: 0
+        document.write(String(" 123 ") + "<br>"); // Prints: 123
+        document.write(String(" ") + "<br>"); // Prints: 0
+        document.write(String("") + "<br>"); // Prints: 0
+        document.write(String("123e-1") + "<br>"); // Prints: 12.3
+        document.write(String("0xFF") + "<br>"); // Prints: 255 (hexadecimal representation)
+        document.write(String("undefined") + "<br>"); // Prints: NaN
+        document.write(String("null") + "<br>"); // Prints: NaN
+        document.write(String("Hello World!")); // Prints: NaN
+    </script>
+</body>
+</html>

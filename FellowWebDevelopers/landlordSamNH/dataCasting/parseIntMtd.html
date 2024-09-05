@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let numofEggs = parseInt(prompt("Enter num of Eggs"))
+    let numofApples = parseInt(prompt("Enter num of Apples"))
+    let numofBanana = parseInt(prompt("Enter num of bananna"))
+    let avgofItems = ( numofEggs + numofApples + numofBanana)/3
+    console.log(avgofItems.toPrecision(2));
+    console.log(avgofItems.toFixed(2));
+
+    // To display the average in a formatted string
+    let formattedString = "The average number of items is " + avgOfItems.toFixed(2);
+    document.write(formattedString);
+  </script>
+</body>
+</html>

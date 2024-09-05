@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Casting Javascript</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let num = '3'
+        let num2 = 2
+        let result = num + num2 // autocasting occured here
+        console.log(result);
+
+        let age = 24
+        let name = 'Paul'
+        let res = age + name
+        console.log(res);
+
+        document.write('3' - 2);  // Prints 1
+        document.write("<br>");
+
+        document.write('3' + 2);  // Prints 32
+        document.write("<br>");
+
+        document.write(3 + "2");  // Prints 32
+        document.write("<br>");
+
+        document.write("3" * "2");  // Prints: 6
+        document.write("<br>");
+
+        document.write("10" / "2");  // Prints: 5
+        document.write("<br>");
+
+        document.write(1 + true);  // Prints 2 (because false is converted to 0)
+        document.write("<br>");
+
+        document.write(1 + false);  // Prints: 1 (because false is converted)
+        document.write("<br>");
+
+        document.write(1 + undefined);  // Prints NaN
+        document.write("<br>");
+
+        document.write(3 + null);  // Prints: 3 (because null is converted to 0)
+        document.write("<br>");
+
+        document.write("3" + null);  // Prints: "3null"
+        document.write("<br>");
+
+        document.write(true + null);  // Prints: 1
+        document.write("<br>");
+
+        document.write(true + undefined); // Prints: NaN
+        document.write("<br>")
+
+    </script>
+</body>
+</html>

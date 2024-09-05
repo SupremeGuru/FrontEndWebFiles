@@ -1,0 +1,5 @@
+    Types of Events;
+1. Mouse Events
+2. Form Events
+3. Window Evnets
+4. Keyboard Events

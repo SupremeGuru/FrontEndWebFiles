@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let userNames = ["Pauline", "Olatayo", "Eze", "Yusuf", "Nsan"];
+      function searchVal(val) {
+        return val.length > 4;
+      }
+      let returnVal = userNames.find(searchVal);
+      console.log(returnVal);
+
+      const personArray = [
+        {
+          name: "Bola",
+          age: 17,
+        },
+        {
+          name: "Tola",
+          age: 56,
+        },
+        {
+          name: "John",
+          age: 43,
+        },
+        {
+          name: "Daniel",
+          age: 31,
+        },
+      ];
+      let oldpeople = (person) => person.age > 18;
+      let oldObj = personArray.includes({ name: "Tola", age: 43 });
+      console.log(oldObj);
+
+      let names = ["Kola", "Tola", "Bola", "fola"];
+      let res = names.includes("Kola", 1, 4);
+      console.log(res);
+    </script>
+  </body>
+</html>

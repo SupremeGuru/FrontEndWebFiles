@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myDiv = document.createElement("div");
+        myDiv.setAttribute("class", "myDiv");
+        myDiv.style.border = "3px solid green";
+        myDiv.style.padding = "1em";
+        myDiv.style.width = "200px";
+        myDiv.style.textAlign = "center";
+        let myDivText = document.createTextNode("Hello World");
+        myDiv.appendChild(myDivText);
+        document.body.append(myDiv);
+    </script>
+</body>
+
+</html>

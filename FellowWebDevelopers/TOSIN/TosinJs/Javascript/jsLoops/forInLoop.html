@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Loop</title>
+</head>
+
+<body>
+    <script>
+        let myItems = new Array()
+        myItems.push('Bag')
+        myItems.push('Shoes')
+        myItems.push('Belt')
+        myItems.push('Cloth')
+        myItems.push('Phone')
+        console.log(myItems);
+        for (let iter in myItems) {
+            console.log(myItems[iter]);
+        }
+
+        let innit = [12, 45, 20, 45, 56, 97, 34]
+        for (let iter in innit) {
+            console.log(innit[iter]);
+        }
+    </script>
+</body>
+
+</html>-

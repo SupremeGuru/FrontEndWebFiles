@@ -1,0 +1,1 @@
+JavaScript supports both integer and floating-point numbets that can be represented in decimal, hexadecimal or octal notation. Unlike other languages, JavaScript does not treat integer and floating=point numbers 

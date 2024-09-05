@@ -1,0 +1,32 @@
+body {
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.stopwatch {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.display {
+    margin-bottom: 20px;
+    font-size: 6em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    background-color: hsl(0, 0%, 20%);
+    color: #fffdfdf0;
+    border-radius: 6px;
+    cursor: default;
+}
+
+button {
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(0, 0%, 10%);
+    color: #fffdfdf0;
+    font-size: 18px;
+    padding: 20px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}

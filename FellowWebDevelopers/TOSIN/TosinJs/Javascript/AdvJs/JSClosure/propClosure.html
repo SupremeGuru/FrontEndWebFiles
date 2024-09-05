@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function makeCounter() {
+            var counter = 0;
+            // Nested function
+            function make() {
+                counter += 1;
+                return counter;
+            }
+            return make;
+        }
+
+        // Execute the makeCounter() function and store the returned value in the myCounter variable
+        var myCounter = makeCounter();
+
+        console.log(myCounter());
+        console.log(myCounter());
+
+    </script>
+</body>
+
+</html>

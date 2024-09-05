@@ -1,0 +1,16 @@
+{
+    "book": 
+        {
+            "id": 1,
+            "bookName": "The man in an iron mask",
+            "author": "John Doe",
+            "year": 2022,
+            "price": 10.99,
+            "availability": true,
+            "cast": [
+                "Michael Moore",
+                "Peter Costa",
+                "Mirian Richie"
+            ]
+        }
+}

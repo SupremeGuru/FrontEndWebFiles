@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myStyle {
+        padding: 1em;
+        background-color: gold;
+        color: antiquewhite;
+        border: 2px dashed green;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        visibility: visible;
+        border: 2px solid darkgreen;
+        background-color: #000;
+        color: #fff;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro1">
+      Hidden Text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Facilis, reprehenderit.
+    </div>
+
+    <div id="intro2" class="see">
+      Show Text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Facilis, reprehenderit.
+    </div>
+
+    <script>
+      let fDiv = document.querySelector("#intro1");
+      fDiv.classList.add("hide");
+      fDiv.classList.add("hide", "myStyle");
+      //   fDiv.classList.remove("hide");
+      let sDiv = document.querySelector("#intro2");
+      //   sDiv.classList.toggle('show')
+      //   sDiv.classList.add('show')
+      if (sDiv.classList.contains("see")) {
+        sDiv.classList.add("myStyle");
+      }
+    </script>
+  </body>
+</html>

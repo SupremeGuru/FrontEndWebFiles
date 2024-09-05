@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-    //     console.log('Go to work');
-    //     break;
-    // case wednesday:
-    //     console.log('Watch UEL');
-    //     break;
-    // default:
-
-
-
-
-
-
-
 let chr = prompt('Enter a Character');
 switch (chr) {
     case 'a': 
@@ -37,3 +17,10 @@ switch (chr) {
         console.log("Your character is not a vowel");
         break;
 }
+
+    //     console.log('Go to work');
+    //     break;
+    // case wednesday:
+    //     console.log('Watch UEL');
+    //     break;
+    // default:

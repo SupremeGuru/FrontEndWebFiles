@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- The first thing we are looking at is creating element -->
+  </body>
+
+  <script>
+    //creating h1 element
+    let h1Element = document.createElement("h1");
+    console.log(h1Element);
+
+    //creating div element and setting an id and a class
+    //Note you can add a class with either className or classList
+    let divElement = document.createElement("div");
+    divElement.id = "myDiv";
+    divElement.className = "myDivClass";
+    console.log(divElement);
+
+    // innerHTML is used for creating HTML elements while innertext is for adding texts
+
+    divElement.innerHTML = "<p> Hello world </p>";
+    console.log(divElement);
+
+    //Adding the divElement to the body of the page
+    document.body.appendChild(divElement);
+    console.log(divElement);
+  </script>
+</html>

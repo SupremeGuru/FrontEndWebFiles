@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js File Loader</title>
+</head>
+<body>
+    <script>
+        // let URL = prompt("The js file PATH you want to load\n")
+        // let jsLoader = (URL)=> {
+        //     let script = document.createElement("script")
+        //     script.src = URL
+        //     document.body.appendChild(script)
+        // }
+        // jsLoader(URL)
+    </script>
+    <script>
+        function LoadJS(URL){
+            let jsScript = document.createElement('script');
+            jsScript.src = URL
+            jsScript.async = false
+            document.body.appendChild(jsScript)
+        }
+        LoadJS('C:\Users\HP\Desktop\WebDevThings\UdemyFrontEndWeb\JsUdemy\Emmajs8.js')
+    </script>
+</body>
+</html>

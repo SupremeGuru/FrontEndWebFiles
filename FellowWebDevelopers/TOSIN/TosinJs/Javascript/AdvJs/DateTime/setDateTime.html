@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Date/Time</title>
+</head>
+<body>
+    <script>
+        // Date Class instantiation
+        let curDateTime = new Date() 
+
+        curDateTime.setDate(25);
+        console.log(curDateTime);
+
+        let dob = new Date(2024,2,19)
+        dob.setMonth(5)
+        console.log(dob);
+
+        let dobTime = new Date(2024,2,19,11,34,12,234);
+        dobTime.setHours(21);
+        console.log(dobTime);
+        
+        let dobStr = new Date('19 March 2024')
+        dobStr.setFullYear()
+        console.log(dobStr);
+
+        let dobMilli = new Date(153222222000)
+        console.log(dobMilli);
+    </script>
+</body>
+</html>

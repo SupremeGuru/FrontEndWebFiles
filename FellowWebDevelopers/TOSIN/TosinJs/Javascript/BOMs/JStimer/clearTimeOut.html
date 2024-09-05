@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear TimeOut</title>
+</head>
+<body>
+    <button onclick="delayedAlert();">Show Alert After Three Seconds</button>
+    <button onclick="clearAlert();">Cancel Alert Before It Displays</button>
+
+    <script>
+        function delayedAlert() {
+            timeoutID = setTimeout(showAlert, 3000);
+        }
+
+        function showAlert() {
+            alert('This is a Javascript alert box');
+        }
+
+        function clearAlert() {
+            clearTimeout(timeoutID);
+        }
+    </script>
+</body>
+</html>

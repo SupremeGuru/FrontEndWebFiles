@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowing Apply Method</title>
+</head>
+
+<body>
+    <script>
+        let myObj1 = {
+            id: 1,
+            name: 'John',
+            age: '23',
+
+            greet: function (val, gender) {
+                console.log(val, gender);
+                console.log(this.name, this.age, this.id);
+            }
+        }
+
+        myObj1.greet();
+
+        // USING BORROWING METHOD TO CREATE ANOTHER OBJECT TYPE
+        let myObj2 = {
+            id: 3,
+            name: 'James',
+            age: 34
+        };
+        myObj1.greet.apply(myObj2, ['Hello There!!!!', 'Male']);
+
+    </script>
+</body>
+
+</html>

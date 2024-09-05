@@ -1,0 +1,5 @@
+npm install @mailchimp/mailchimp_transactional // To download the mailchimp_transactional dependencies using node js
+
+pip install mailchimp_transactional // To download the mailchimp_transactional module using python
+
+no module for bash because it is using curl

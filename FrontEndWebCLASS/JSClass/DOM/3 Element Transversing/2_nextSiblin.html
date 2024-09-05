@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- The first method is getting by the parent Node  -->
+
+    <ul>
+      <li>Hello</li>
+      <li>Good</li>
+      <li id="myli">Hi</li>
+      <li>How are you doing</li>
+      <li>What's God</li>
+    </ul>
+    <script>
+      let theli = document.querySelectorAll("#myli");
+      let nextsib = theli.nextElementSibling;
+      console.log(nextsib);
+
+      let nextsibb = theLi.nextElementSibling;
+      console.log(nextsib);
+    </script>
+  </body>
+</html>

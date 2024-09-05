@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- The first method is getting by the parent Node  -->
+
+    <ul id="menu">
+      <li class="first">Hello</li>
+      <li>Products</li>
+      <li class="current">current support</li>
+      <li>careers</li>
+      <li>Investors</li>
+      <li class="last">News</li>
+    </ul>
+    <script>
+      let parent = document.querySelector("#menu");
+      let lastchild = parent.lastElementChild.nodeName;
+      console.log(lastchild);
+    </script>
+  </body>
+</html>

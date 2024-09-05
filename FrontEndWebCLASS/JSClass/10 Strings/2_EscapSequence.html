@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape sequence</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+  \n is replaced by the newline character  
+  \t is replaced by the tab character
+  \r is replaced by the carriage-return   character
+  \b is replaced by the backspace character
+  \\ is replaced by the single backslash (\) because javascript syntax does'nt recognise the single backslah when typed n a code. It woud run like nothing was inputed
+-->
+
+    <script>
+      let messg = " Hello it's time to \n get things done";
+      console.log(messg);
+
+      let messg1 = " Hello it's time to \t get things done";
+      console.log(messg1);
+
+      let messg2 = " Hello it's time to \r get things done";
+      console.log(messg2);
+
+      let messg3 = " Hello it's time to \b get things done";
+      console.log(messg3);
+
+      let messg4 = " Hello it's time to \\ get things done";
+      console.log(messg4);
+
+      // An example of double backslah. Lets say you have a link or path you want to displace in your browser, while writting the code, below is the appropriate way of doing it
+
+      var messg5 = "c:\User\Download";
+      document.write(messg5 + "<br/>"); // it would display c:UserDownload
+      console.log(messg5);
+
+      var messg6 = "c:\\User\\Download";
+      document.write(messg6); // it would display c:\User\Download
+      console.log(messg6);
+
+      //It is not showinfg me the two codes in the docments so i decided to use console.log and it showed
+    </script>
+  </body>
+</html>

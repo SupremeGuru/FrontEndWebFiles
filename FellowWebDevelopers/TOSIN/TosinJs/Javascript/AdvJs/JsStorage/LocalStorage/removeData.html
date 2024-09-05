@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = localStorage.getItem('user');
+        if (data) {
+            localStorage.removeItem('user')
+            console.log('User Data removed successfully');
+        } else {
+            console.log(" User Data cannot be removed");
+        }
+    </script>
+</body>
+
+</html>

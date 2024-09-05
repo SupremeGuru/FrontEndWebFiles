@@ -1,0 +1,41 @@
+{
+    "movie": [
+        {
+            "id": 1,
+            "movieName": "The man in an iron mask",
+            "author": "John Doe",
+            "year": 2022,
+            "price": 10.99,
+            "availability": true,
+            "cast": [
+                "Michael Moore",
+                "Peter Costa",
+                "Mirian Richie"
+            ]
+        },
+        {
+            "id": 2,
+            "movieName": "Titanic",
+            "author": "Andy Johnson",
+            "year": 1997,
+            "price": 15.99,
+            "availability": true,
+            "cast": [
+                "Leonardo De Caprio",
+                "Kate Winslett"
+            ]
+        },
+        {
+            "id" : 3,
+            "movieName" : "Spiderman",
+            "author" : "Andrew Tate",
+            "year" : 2018,
+            "price" : 20.00,
+            "availability" : true,
+            "cast" : [
+                "Tom Holland",
+                "Tony Stark"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Constructor</title>
+</head>
+<body>
+
+
+
+    <script>
+        let value = "123456";
+        let valType = typeof value;
+        console.log(valType);
+        let numval = Number(value);
+        console.log(numval);
+        let numType = typeof numval;
+        console.log(numType);
+  
+        document.write(Number("10.5") + "<br>"); // Prints: 10.5
+        document.write(Number(true) + "<br>"); // Prints: 1
+        document.write(Number(false) + "<br>"); // Prints: 0
+        document.write(Number(null) + "<br>"); // Prints: 0
+        document.write(Number(" 123 ") + "<br>"); // Prints: 123
+        document.write(Number(" ") + "<br>"); // Prints: 0
+        document.write(Number("") + "<br>"); // Prints: 0
+        document.write(Number("123e-1") + "<br>"); // Prints: 12.3
+        document.write(Number("0xFF") + "<br>"); // Prints: 255 (hexadecimal representation)
+        document.write(Number("undefined") + "<br>"); // Prints: NaN
+        document.write(Number("null") + "<br>"); // Prints: NaN
+        document.write(Number("Hello World!")); // Prints: NaN
+      </script>
+</body>
+</html>

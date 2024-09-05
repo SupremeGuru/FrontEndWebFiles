@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myBtn {
+        background-color: crimson;
+        color: #fff;
+        padding: 1em;
+        border: none;
+        cursor: pointer;
+        width: 300px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 6px;
+      }
+      .myBtn:hover {
+        box-shadow: 2px 10px 15px tomato;
+      }
+      #theBtn {
+        background-color: black;
+        box-shadow: 2px 10px 15px #292929;
+        color: #fff;
+        padding: 1em;
+        border: none;
+        cursor: pointer;
+        width: 300px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="theBtn">Click Me</button>
+
+    <script>
+      let btn = document.getElementsByTagName("button");
+      btn[0].setAttribute("class", "myBtn");
+      btn[0].removeAttribute("id");
+    </script>
+  </body>
+</html>

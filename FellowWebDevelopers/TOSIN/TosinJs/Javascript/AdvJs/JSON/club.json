@@ -1,0 +1,41 @@
+{
+    "Club": [
+        {
+            "name": "FC Barcelona",
+            "year": 1899,
+            "coach": "Xavi Hernandez",
+            "stadium": "Spotify Camp Nou Stadium",
+            "crest": "https://www.google.com/imgres?q=barcelona%20crest%20png&imgurl=https%3A%2F%2Flogolook.net%2Fwp-content%2Fuploads%2F2021%2F11%2FBarcelona-Logo.png&imgrefurl=https%3A%2F%2Flogolook.net%2Fbarcelona-logo%2F&docid=2RGguj_l4tSlmM&tbnid=drybpZq7luLgQM&vet=12ahUKEwiur5fx4-6FAxU0QEEAHQXuAL0QM3oECBQQAA..i&w=3840&h=2160&hcb=2&ved=2ahUKEwiur5fx4-6FAxU0QEEAHQXuAL0QM3oECBQQAA",
+            "tittle" : {
+                "La Liga": "27 titles",
+                "Copa del Rey": "31 titles",
+                "UEFA Champions League": "5 titles",
+                "Cup Winners Cup": "4 titles",
+                "League Cup": "2 titles",
+                "International Champions Cup": "1 title",
+                "Audi Cup": "1 title",
+                "Copa Del Ray": "31 titles",
+                "La-liga": "27 titles",
+                "Inter-Cities Fairs Cup" : " 4 titles",
+                "SuperCopa" : "14 titles"
+            },
+            "players": [
+                "Robert Lewandowski",
+                "Gavi",
+                "Pedri",
+                "Lamine Yamal",
+                "Rafinha",
+                "Sergio Roberto",
+                "Gerald Pique",
+                "Ter Stegen",
+                "Vitor Roque",
+                "Jao Felix",
+                "Marc Guiu",
+                "Hector Fort",
+                "Oriol Romeu",
+                "Pao Victor",
+                "Pao Prim"
+            ]
+        }
+    ]
+}

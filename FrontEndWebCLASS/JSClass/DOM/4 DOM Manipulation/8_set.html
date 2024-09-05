@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="note">
+      Javascript tetxContent Demo
+
+      <span style="display: none">Hiddem Text</span>
+    </div>
+
+    <div id="container"></div>
+
+    <script>
+      let note = document.getElementById("note");
+      console.log(note.textContent);
+
+      let container = document.querySelector("#container");
+      container.textContent = "Hello world";
+      //The function textcontent does not support you to write inner Html, unlike batique
+      container.textContent = "<p>Hello world</p>";
+    </script>
+  </body>
+</html>

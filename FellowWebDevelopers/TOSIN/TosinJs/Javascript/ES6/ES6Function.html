@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //ES5 Default Param
+    // Function Hoisting
+    document.write(sayHello2('John'))
+    function sayHello(name){
+        var name = name || "World"
+        return "Hello " + name + "!"
+    }
+
+    document.write(sayHello())
+    document.write("<br>")
+    document.write(sayHello("John"))
+    document.write("<br>")
+
+    function sayHello2(name = "World"){
+       
+        return "Hello " + name + "!"
+    }
+
+    document.write(sayHello2())
+    document.write("<br>")
+    document.write(sayHello2("John"))
+    document.write("<br>")
+
+
+</script>
+</body>
+</html>

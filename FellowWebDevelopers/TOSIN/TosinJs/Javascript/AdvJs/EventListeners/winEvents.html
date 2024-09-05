@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Events</title>
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <script>
+        // Defining event listeners function
+        function dsiplayWindowSize() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var size = 'Width: ' + w + ',' + 'Heigth: ' + h;
+            document.getElementById('result').innerHTML = size;
+        }
+
+        // Attaching the event listeners function to window's resize event
+        window.addEventListener('resize', dsiplayWindowSize)
+    </script>
+</body>
+
+</html>

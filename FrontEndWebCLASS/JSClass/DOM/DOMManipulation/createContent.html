@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Element and TextNode in the DOM</title>
+</head>
+<body>
+    
+
+
+    <script>
+        ///Creating div element
+        let div = document.createElement("div");
+        /// Creating div id 
+        div.id = 'myDiv'
+        /// adding class to the DOM
+        div.className = "myClass";
+
+        // To create element for the textContent in the html
+        let h2 = document.createElement("h2");
+        // To create the textContent
+        h2.textContent = "I like noodles";
+        // To append h2 to div
+        div.appendChild(h2);
+        // To add or append div to the DOM
+        document.body.appendChild(div)
+        // To add it to the 
+        console.log(div);
+
+        /// To create a text node 
+        let myText = document.createTextNode('Hello Somebody')
+        /// Then add it to the dom
+        div.appendChild(myText)
+        
+    </script>
+
+    <div id="id" class="myClass">
+        <p>Hello World</p>
+        hello Somebody
+    </div>
+</body>
+</html>

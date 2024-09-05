@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body {
+            overflow: hidden;
+            background-color: #ccc;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clock {
+            font-size: 6em;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 700;
+            padding: 20px;
+            background-color: hsl(0, 0%, 20%);
+            color: #fffdfdf0;
+            border-radius: 6px;
+            cursor: default;
+        }
+
+        button {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+            background-color: hsl(0, 0%, 10%);
+            color: #fffdfdf0;
+            border: none;
+            border-radius: 7px;
+            padding: 20px;
+            position: relative;
+            left: 31%;
+            top: 70px;
+        }
+
+        button:hover {
+            background-color: hsl(0, 0%, 20%);
+        }
+
+        button:active {
+            background-color: hsl(0, 5%, 35%);
+        }
+
+        .stop {
+            margin-left: 3%;
+        }
+
+        .reset {
+            margin-left: 4%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="clock"></span>
+    </div>
+    <button onclick="startTime()">Start Clock</button>
+    <button class="stop" onclick="stopTime()">Stop Clock</button>
+
+    <script>
+        let timeoutID;
+
+        function showTime() {
+            const d = new Date();
+            document.getElementById('clock').textContent = d.toLocaleTimeString();
+        }
+        // setInterval(showTime, 1000);
+
+        function startTime() {
+            timeoutID = setInterval(showTime, 1000);
+        }
+
+        function stopTime() {
+            clearInterval(timeoutID);
+        }
+
+    </script>
+</body>
+
+</html>

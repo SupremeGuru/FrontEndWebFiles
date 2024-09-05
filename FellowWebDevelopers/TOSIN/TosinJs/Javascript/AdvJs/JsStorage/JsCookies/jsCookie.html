@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function setCookie(cookName, cookValue, expiry) {
+            var dt = new Date();
+            dt.setTime(dt.getTime() + expiry * 24 * 60 * 1000);
+            var expires = "expires=" + dt.toUTCString();
+            document.cookie = cookName + "=" + cookValue + ";" + expiry
+        }
+        setCookie();
+
+        function getCookie(cookName) {
+            var cname = cookName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookArray = decodedCookie.split(";");
+            for (var i = 0; i < cookArray.length; i++) {
+                var c = cookArray[i];
+                while (c.charAt(0) == " ") {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(cname) == 0) {
+                    return c.substring(cname.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var firstName = getCookie("firstName");
+            if (firstName != "") {
+                alert("Welcome again" + firstName);
+            } else {
+                firstName = prompt("Enter name:", "");
+                if (firstName != "" && firstName != null) {
+                    setCookie("firstname", firstName, 365);
+                }
+            }
+        }
+        checkCookie();
+    </script>
+</body>
+
+</html>

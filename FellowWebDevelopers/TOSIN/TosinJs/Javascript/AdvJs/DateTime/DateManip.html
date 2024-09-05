@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Manipulaton</title>
+</head>
+<body>
+    <script>
+        // Dae Class instantation
+        let curDateTime = new Date() 
+        console.log(curDateTime);
+
+        let dob = new Date(2024, 2, 19)
+        console.log(dob.toDateString());
+
+        let dobTime = new Date(2024,2,19,11,34,12,234)
+        console.log(dobTime.toLocaleDateString());
+
+        let dobStr = new Date('19 March 2024')
+        console.log(dobStr.toISOString());
+
+        let dobMilli = new Date(153222222000)
+        console.log(dobMilli);
+    </script>
+</body>
+</html>

@@ -12,6 +12,7 @@ const obj = {
 
 
 Object.entries(obj).map(value =>{
+    console.log(value[1] + value[0].replace("userName", " ID"));
     return value[1] + value[0].replace("userName", " ID");
 })
 

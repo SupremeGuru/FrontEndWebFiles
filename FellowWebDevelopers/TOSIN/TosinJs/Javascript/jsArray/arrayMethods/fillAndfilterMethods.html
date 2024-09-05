@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+      //   let fillItem = salad.fill('🌽');
+      //   console.log(fillItem);
+
+      //   let fillItemsStart = salad.fill('🌽', 2);
+      //   console.log(fillItemsStart);
+
+      //   let fillItemsStartEnd = salad.fill("🌽", 2, 5);
+      //   console.log(fillItemsStartEnd);
+
+      const prices = [1800, 2000, null, 3000, 5000, "Thousand", 500, 8000];
+
+      function filternums(val) {
+        return val > 2000 && !Number.isNaN(val);
+      }
+      let filVals = prices.filter(filternums);
+      console.log(filVals);
+
+      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+      function filtnum(even) {
+        if (even % 2 && even > 4) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      let filtVals = numbers.filter(filtnum);
+      console.log(filtVals);
+    </script>
+  </body>
+</html>

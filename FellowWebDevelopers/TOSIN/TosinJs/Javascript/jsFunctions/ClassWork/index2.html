@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let amountOfLitre = parseInt(
+        prompt("Enter the amount of litres you want to buy: ")
+      );
+      let sizeOfKeg = parseInt(prompt("Enter the size of your container: "));
+
+      function buyFuel(amountOfLitre, sizeOfKeg) {
+        const amountPerLitre = 620.0;
+        if (amountOfLitre < sizeOfKeg) {
+          return;
+          console.log(
+            `You have purchased ${amountOfLitre}litres of fuel at #${
+              amountOfLitre * amountPerLitre
+            }`
+          );
+        }
+         else if (amountOfLitre > sizeOfKeg) {
+          return console.log(
+            `Your container cannot contain ${amountOfLitre}litres of fuel`
+          );
+        } 
+        else if ((amountOfLitre = sizeOfKeg)) {
+          return console.log(
+            `You have purchased ${amountOfLitre}litres of fuel at #${
+              amountOfLitre * amountPerLitre
+            }` );
+        } 
+        else {
+          return console.log(`Input your data`);
+        }
+      }
+      buyFuel(amountOfLitre, sizeOfKeg);
+
+      // let Days = Array(5);
+      // Days[1] = `You purchased 12Litres of fuel at #7440 on Sunday the 1st of March 2024`;
+      // Days[2] = `You purchased 5Litres of fuel at #2100 on  Monday the 2nd of March 2024`;
+      // Days[3] = `You purchased 12Litres of fuel at #7440 on Wednesday the 4th of March 2024`;
+      // Days[4] = `You purchased 12Litres of fuel at #7440 on Friday the 6th of March 2024`;
+      // Days[5] = `You purchased 12Litres of fuel at #7440 on Saturday the 7th of March 2024`;
+      //   console.log(Days);
+    </script>
+  </body>
+</html>

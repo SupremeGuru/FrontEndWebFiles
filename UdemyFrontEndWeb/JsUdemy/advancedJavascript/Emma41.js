@@ -1,9 +1,9 @@
 // Debugging
 // To debug you need to know what your code is doing from line by line, to left and right
-// One way to debug normally in any code is to try to print out the variables,parameters or in general objects as you undestand the code
+// One way to debug normally in any code is to try to print out the variables,parameters or in general objects as you understand the code
 // Then later remove the unneccassary code e.g
 const flattened = [[0,1], [2,3], [4,5]].reduce(
-    (a,b)=> a.concat(b), []);// Now this is the code we want to undestand
+    (a,b)=> a.concat(b), []);// Now this is the code we want to understand
 // We can first take it to our terms
 const flattened1 = [[0,1], [2,3], [4,5]].reduce(
     (accumulator, array) => accumulator.concat(array), []);

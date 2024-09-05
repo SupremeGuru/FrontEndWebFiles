@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Write a script that can be used to calculate
+        // - Area of a cylinder
+        // - Volume of a cylinder
+
+        const PI = 3.142;
+        let radius = prompt("Radius: ");
+        let height = prompt("Height: ");
+
+        function VolumeOfCylinder(PI, radius, height){
+            var volume = (PI)*((radius)**(2))*(height);
+            return console.log(`The volume of cylinder is ${volume}m2`);
+        }
+        VolumeOfCylinder(PI,radius, height);
+
+        let Radius = prompt("Radius: ");
+        let Height = prompt("Height: ");
+        
+        function AreaOfCylinder(PI, radius, height) {
+            var Area = (2)*(PI)*((radius)**(2)) + (2)*(PI)*(radius)*(height);
+            return console.log(`The area of cylinder ${Area}m2`);
+        }
+        AreaOfCylinder(PI, radius, height);
+    </script>
+</body>
+</html>

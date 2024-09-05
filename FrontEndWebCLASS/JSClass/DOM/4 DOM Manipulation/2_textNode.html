@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- creating TextNode -->
+  </body>
+
+  <script>
+    let divElement = document.createElement("div");
+    console.log(divElement);
+
+    // innerHTML is used for creating HTML elements while innertext is for adding texts
+
+    divElement.innerHTML = "<p> Hello world </p>";
+    console.log(divElement);
+
+    //Adding the divElement to the body of the page
+    document.body.appendChild(divElement);
+    console.log(divElement);
+
+    //Adding Text
+    let myText = document.createTextNode("Greetings");
+    divElement.appendChild(myText);
+    document.body.appendChild(divElement);
+    console.log(divElement);
+  </script>
+</html>

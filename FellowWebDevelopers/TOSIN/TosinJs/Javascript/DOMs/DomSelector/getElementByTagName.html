@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Guys</h1>
+    <p>Hello World</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h3>Hello Ultimate-Guru</h3>
+    <p>Hello Nigeria</p>
+
+    <script>
+      let h1Elements = document.getElementsByTagName('h1');
+      h1Elements[1].style.color = "yellow";
+      h1Elements[1].style.fontSize = "50px";
+      console.log(h1Elements);
+
+      for (let eleH1 of h1Elements) {
+        eleH1.style.fontFamily = "Georgia"
+      }
+    </script>
+  </body>
+</html>

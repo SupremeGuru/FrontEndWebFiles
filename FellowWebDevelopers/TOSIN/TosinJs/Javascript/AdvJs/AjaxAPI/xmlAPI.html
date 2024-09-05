@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="par"></div>
+    <script>
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onload = function () {
+            // Access responseXML within the onload function
+            let xmlResponse = this.responseXML;
+            let x = xmlResponse.getElementsByTagName('CATALOGUE');
+            let txt = "";
+            for (let i = 0; i < x.length; i++) {
+                txt = txt + x[i].childNodes[0].nodeValue + '<br>';
+            }
+            // Use innerHTML to properly insert the line breaks as HTML
+            document.getElementById('par').innerHTML = txt;
+        };
+
+        xhttp.open('GET', './user.xml', true);
+        xhttp.send();
+
+    </script>
+</body>
+
+</html>

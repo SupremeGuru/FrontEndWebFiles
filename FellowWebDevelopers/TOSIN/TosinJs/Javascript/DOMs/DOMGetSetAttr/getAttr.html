@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="http://www.google.com" target="_blank" id="google">Google</a>
+
+    <script>
+      let anchor = document.querySelector("#google");
+      let ggLink = anchor.getAttribute("href");
+      console.log(ggLink);
+
+      let ggtarget = anchor.getAttribute("target");
+      console.log(ggtarget);
+
+      let ggid = anchor.getAttribute("id");
+      console.log(ggid);
+    </script>
+  </body>
+</html>

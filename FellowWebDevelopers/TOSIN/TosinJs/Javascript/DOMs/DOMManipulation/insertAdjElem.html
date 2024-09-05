@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---- "beforebegin", "afterbegin", "beforeend", "afterend" ---->
+
+    <!-- beforebegin -->
+    <div id="mydiv">
+        <!-- afterbegin -->
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae inventore voluptatum, debitis aperiam, et porro qui consectetur officia exercitationem amet dolore odit vel dignissimos eius!</p>
+        <!-- beforeend -->
+    </div>
+    <!-- afterend -->
+
+    <script>
+        let ele = document.createElement('p')
+        let ele2 = document.createElement('h2')
+        let myDiv = document.getElementById('mydiv')
+            myDiv.insertAdjacentElement("beforebegin", ele)
+            myDiv.insertAdjacentElement("afterbegin", ele2)
+
+        // myDiv.insertAdjacentElement("beforeend", '<p> Middle div </p>')
+        // myDiv.insertAdjacentElement("afterend", '<p> Ending div </p>')
+    </script>
+</body>
+</html>

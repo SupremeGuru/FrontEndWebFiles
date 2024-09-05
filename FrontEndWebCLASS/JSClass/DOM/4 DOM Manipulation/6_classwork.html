@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Write a function that will be used to execute any Javascript file -->
+
+    <script>
+      function loadJs(URL) {
+        let jsScript = document.createElement("script");
+        jsScript.src = URL;
+        jsScript.async = false;
+        document.body.appendChild(jsScript);
+      }
+      loadJs("./hello.js");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+Understanding the JS syntax
+
+The syntax of JS is the set of rules that defines a correctly structured JS program.
+
+A JS consists of javascript statements that are placed within the 
+<script></script> HTML tags in a web page, or within the external JAVASCRIPT file having .js extension.
+
+Case Sensitivity in JS
+
+JS is case-sensitive. This means that variables, languages, function names, and other identifiers
+must always be typed with a consistent capitalization of letters.
+
+For example, the variable myVar must be typed myVar not MyVar or myvar.
+Similarly, the method name getElementById() must be typed with the exact case not as getElementByID().

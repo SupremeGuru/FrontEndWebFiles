@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="ultimate">Hello Guys</h1>
+  <h1>Hello World</h1>
+  <h1 id="guru">Hello Ultimate-Guru</h1>
+  <h1 class="ultimate best">Hello Nigeria</h1>
+  <h1 class="ultimate">Hello World</h1>
+
+  <script>
+    let h1Elements = document.getElementsByClassName("ultimate");
+    h1Elements[1].style.color = "yellow";
+    h1Elements[1].style.fontSize = "50px";
+    console.log(h1Elements);
+
+    for (let eleH1 of h1Elements) {
+      eleH1.style.fontFamily = "Georgia"
+    }
+  </script>
+</body>
+
+</html>

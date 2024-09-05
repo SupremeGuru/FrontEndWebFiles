@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operators</title>
+</head>
+<body>
+    <!-- 
+    <boolean expression> ? truthy result : falsy result;
+    -->
+
+    <script>
+        let age = 8;
+        let message;
+
+        age >= 16
+        ? (message = "You can drive.")
+        : (message = "You cannot drive.");
+
+        // also
+        let authenticated = true;
+        let nextURL = authenticated
+        ? (alert("You will be redirected to the admin area"), "/admin")
+        : (alert("Access denied"), "/403")
+
+        // redirect to nextURL here
+        console.log(nextURL);  // '/admin'
+
+        console.log(message);
+
+        let speed = 90;
+        let message1 = (speed >= 120)? "Too Fast" : speed >= 80 ? "Fast" : "OK";
+
+        console.log(message1);
+    </script>
+</body>
+</html>

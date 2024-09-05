@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+      let itemsIterator = salad.entries();
+      // for (let val of itemsIterator)
+      // console.table(val);
+
+      let val1 = itemsIterator.next().value;
+      console.log(val1);
+      let val2 = itemsIterator.next().value;
+      console.log(val2);
+      let val3 = itemsIterator.next().value;
+      console.log(val3);
+
+      let userNames = ["Pauline", "Olatayo", "Eze", "Yusuf", "Nsan"];
+      function CheckChr(chr) {
+        return chr.length > 6;
+      }
+      let check = userNames.every(CheckChr);
+      console.log(check);
+
+      const ageArray = [34, 23, 20, 26, 22];
+      function CheckAge(num) {
+        return num > 20;
+      }
+      let Check = ageArray.every(CheckAge);
+      console.log(Check);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+  </style>
+  <body>
+    <!-- Look at what the output of all the trim function is (trim is for removing extra or uneccsary spaces) -->
+
+    <script>
+      let randomPassword = "   agress2365     ";
+      let checkLengthFirst = randomPassword.length;
+      console.log(checkLengthFirst);
+      // The above code is to count the length of the above string first to know if the trim woud actually trim off the exta wide spaces
+
+      let checkTrim = randomPassword.trim();
+      console.log(checkTrim);
+
+      let checkLengthAgain = checkTrim.length;
+      console.log(checkLengthAgain);
+
+      console.log("<br>");
+
+      // Now we would do the same for other trim attributes
+      let randomPassword1 = "   HelloWoelldd     ";
+
+      let checkingFirst = randomPassword1.length;
+      console.log(checkingFirst);
+      let checkTrimStart = randomPassword1.trimStart();
+      console.log(checkTrimStart);
+      let checkingAgain = checkTrimStart.length;
+      console.log(checkingAgain);
+      console.log("<br>");
+
+      let checkingFirst1 = randomPassword1.length;
+      console.log(checkingFirst1);
+      let checkTrimStart1 = randomPassword1.trimEnd();
+      console.log(checkTrimStart1);
+      let checkingAgain1 = checkTrimStart.length;
+      console.log(checkingAgain1);
+      console.log("<br>");
+
+      let checkingFirst2 = randomPassword1.length;
+      console.log(checkingFirst2);
+      let checkTrimStart2 = randomPassword1.trimLeft();
+      console.log(checkTrimStart2);
+      let checkingAgain2 = checkTrimStart.length;
+      console.log(checkingAgain2);
+      console.log("<br>");
+
+      let checkingFirst3 = randomPassword1.length;
+      console.log(checkingFirst3);
+      let checkTrimStart3 = randomPassword1.trimRight();
+      console.log(checkTrimStart3);
+      let checkingAgain3 = checkTrimStart.length;
+      console.log(checkingAgain3);
+      console.log("<br>");
+    </script>
+  </body>
+</html>

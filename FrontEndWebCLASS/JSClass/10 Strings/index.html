@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let name = "paul";
+      let gender = "Male";
+      let age = "22";
+      let phoneNumber = "08033066645";
+
+      let paulDetails = `My name is ${name} and i am ${age} years old, I identify as a ${gender}. For more info, you can call ${phoneNumber}`;
+      console.log(paulDetails);
+
+      //The below code shows you how we work with quotation marks in string. If you begin with a quoation mark and you want to put part of the sentence in quoation, you must do so with an opposite quoation from what you started with. Eg if you begin with single quote, you should quote with double quote to avoid errors.
+      var str1 = "It's okay";
+      var str2 = 'He said "Goodbye"';
+      var str3 = "She replied 'calm down', and laughed";
+
+      document.writeln(str1 + "<br>");
+      document.writeln(str2 + "<br>");
+      document.writeln(str3 + "<br>");
+
+      // Another better way to write it weither you begin with ssingle coat or double coat is to add a backSlash before your coataion point inside the particular strings
+
+      // but unfortunaley, its not working because the latest Es6 Javascript has an inbuilt auto Formatting where whenever you run or save a code, it automatically removes the backSlash.
+      //the below code had backslash but was removed after i saved
+
+      var str4 = "It's okay";
+      var str5 = 'He said "Goodbye"';
+      var str6 = "She replied 'calm down', and laughed";
+
+      document.writeln(str4 + "<br>");
+      document.writeln(str5 + "<br>");
+      document.writeln(str6 + "<br>");
+    </script>
+  </body>
+</html>

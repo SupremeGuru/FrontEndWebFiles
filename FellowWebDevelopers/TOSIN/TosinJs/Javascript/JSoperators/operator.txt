@@ -1,0 +1,60 @@
+What are Operators in
+
+Opearators are symbols or keywords that tell the Javascript engine to perform some sort of actions.
+For example, the addition (+) symbol is an operator that tells Javascript engine to add two variables or values,
+while the equal-to (==), greater than (>) or less than (<) symbols are the operators that tells Javascript
+engine to compare two variables or values, and so on.
+
+The arithmetic operators are used to perform common arithmetical operation, such as addition, multiplication e.t.c
+Here is a complete list of Javascript's arithmetic operators:
+
+Operator           Description    Example  
++ Addition          x + y         Sum of x and y
+- Subtraction       x - y         Difference of x and y
+* Multiplication    x * y         Product of x and y
+/ Division          x / y         Quotient of x and y
+% Modulus           x % y         Remainder of x divided by y
+
+
+Augmented Assignment Operators
+
+Operator     Description                  Example       Is the same as
+=             Assign                       x = y          x = y
++=            Add and assign               x += y         x = x + y
+-=            Subtract and assign          x -= y         x = x - y
+*=            Multiply and Assign          x *= y         x = x * y
+/=            Divide and assign Quotient   x /= y         x = x / y
+%=            Divide and assign Modulus    x %= y         x = x % y
+
+
+Javascript Increament and Decreament Operators
+The increament/decreament operators are used to Increament/Decreament variable's values.
+
+Operator    Name                Effects 
+++x         Pre-increament     Increaments x by one, than returns x
+x++         Post-increament    Returns x, then increaments x by one 
+--x         Pre-decreament     Decreaments x by one, then returns x
+x--         Post-decreament    Returns x, then decreament x by one.
+
+
+
+Javascript Logical Operator
+The Logical operators are typically used to combine conditional statements.
+
+Operators  Name    Example Result
+&& And     x && y   True if both x and y are true 
+|| or      x || y   True if either x or y is true
+  Not      |x       True if x is not true
+
+ Javascript Compared Operators
+ The comparison operators are used to compare two values in a Boolean fashion.
+
+ Opearators                     Name      Example Result
+ == Equal                       x == y     True if x is equal to y  
+ === Identical                  x === y    True if x is equal to y, and they are of the same type 
+ |= Not equal                   x |= y     True if x is not equal to y 
+ |== Not Identical              x |== y    True if x is not equal to y, or they are not of the same type
+ < Less than                    x < y      True if x is less than y
+ > Greater than                 x > y      True if x is greater than y
+ >= Greater than ior equal to   x >= y     True if x is less than or equal to y
+ =  Less than or equal to        x <= y     True if x is less than or equal to y.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(id, name, age) {
+                this.id = id;
+                this.name = name;
+                this.age = age
+            }
+
+
+            getInfo = function () {
+                return `ID : ${this.id}, 
+                Name : ${this.name}, 
+                Age : ${this.age}`
+            }
+        }
+
+        class Employee extends Person {
+            constructor(id, name, age, salary, position) {
+                super(id, name, age)
+                this.sal = salary
+                this.pos = position
+            }
+            // Method Overriding
+            getInfo = function () {
+                return `ID : ${this.id}, 
+                Name : ${this.name}, 
+                Age : ${this.age}, 
+                Salary : ${this.sal}, 
+                Position : ${this.pos}`;
+            }
+        }
+
+        let emp = new Employee('001', 'Kola', 23, 2345, 'Director')
+        let res = emp.getInfo();
+        console.log(res);
+
+        let emp2 = new Employee('002', 'Oluwatosin', 20, 200000, 'Supervisor')
+        console.log(emp2);
+    </script>
+</body>
+
+</html>

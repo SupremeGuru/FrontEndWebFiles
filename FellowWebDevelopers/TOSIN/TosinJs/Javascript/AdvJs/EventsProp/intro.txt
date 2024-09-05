@@ -1,0 +1,11 @@
+Event Peopagation is a mechanism that defines how events propagates or travel through the DOM tree 
+to arrive at its target and what happens to it afterward.
+
+Event Propagation proceeds in two phases: capturinng and bubbling phase.
+
+The Capturing phase;
+In the Capturing phase, events propagates from the window down through the DOM tree to the target node.
+For Example, if the user click a hyperlink, that click event would pass through the <html> element, 
+the <body> element, and the <p> element containing the link.
+
+The Bubbling Phase;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums = [23, 56, 12, 98, 3, 68]
+        let maxVal = Math.max.apply(null, nums)
+        console.log(maxVal);
+
+        let minVal = Math.min.apply(null, nums)
+        console.log(minVal);
+
+        let sumVal = nums.reduce(function(a,b) {
+            return a+b
+        })
+        console.log(sumVal);
+    </script>
+</body>
+</html>

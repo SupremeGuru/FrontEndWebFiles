@@ -1,0 +1,7 @@
+https://v6.exchangerate-api.com/v6
+      https://www.exchangerate-api.com/
+    APIKEY:  6905108a87fceab1eea48a00
+
+https://api.freecurrencyapi.com/v1
+      https://freecurrencyapi.com
+    APIKEY: 

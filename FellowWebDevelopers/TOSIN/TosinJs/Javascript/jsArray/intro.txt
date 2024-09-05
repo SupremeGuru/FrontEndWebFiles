@@ -1,0 +1,4 @@
+What is an Array
+
+Array are complex variable that allows us to store more than one value or a group of values under
+a single variable name. js arays can store any valid value, function

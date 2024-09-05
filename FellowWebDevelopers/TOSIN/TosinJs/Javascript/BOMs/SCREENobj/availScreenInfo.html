@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p></p>
+    <script>
+      let width = screen.availWidth
+      let height = screen.availHeight
+      let screenInfo = "Width: " + width + "Height: " + height
+      let par = document.querySelector('p')
+      par.innerText = screenInfo
+
+      // OR
+
+      function resizeWin() {
+        let width = screen.width;
+        let height = screen.height;
+        document.write("Width: " + width + "Height: " + height);
+      }
+    </script>
+
+    <button onclick="resizeWin()">Resize Window</button>
+  </body>
+</html>

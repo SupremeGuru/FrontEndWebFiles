@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating content in the DOM</title>
+</head>
+<body>
+    <ol id="menu">
+        <li>Noodle</li>
+    </ol>
+    <script>
+        // This gets the first ol element with id menu
+        let olEle = document.querySelector("#menu")
+
+        // This creates an li element with Beverages as its content
+        let li = document.createElement('li');
+        li.textContent = 'Beverages';
+        // This appends it to ol
+        olEle.appendChild(li);
+
+        // This creates an li element with Wines as its content
+        let li1 = document.createElement('li');
+        li1.textContent = 'Wines';
+        // This appends it to ol
+        oleEle.appendChild(li1);
+
+        // This appends ol in the DOM as a child of body
+        document.body.appendChild(olEle);
+
+
+    </script>
+</body>
+</html>

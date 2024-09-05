@@ -1,0 +1,9 @@
+Genrating Output In Javascript
+There are certain situations in which you may need to generate output from your Javascript code, For example,
+you might want to see the value of variables, or write a message to browser console to help you debug an issue
+your running Javascript code,so on.
+
+1. Document Object
+2. Alert Method
+3. Title property of document object
+4. Console Object.

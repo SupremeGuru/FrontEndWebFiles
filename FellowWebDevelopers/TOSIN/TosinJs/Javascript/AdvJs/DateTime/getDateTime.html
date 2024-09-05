@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Date/Time</title>
+</head>
+<body>
+    <script>
+        // Date Class instantiation
+        let curDateTime = new Date()
+
+        let dat = curDateTime.getDate()
+        console.log(dat);
+
+        let dob = new Date(2024,2,19)
+        console.log(dob.getDay());
+
+        let dobTime = new Date(2024,2,19,11,34,12,234);
+        console.log(dobTime.getTime());
+        
+        let dobStr = new Date('19 March 2024')
+        console.log(dobStr.getMonth());
+
+        let dobMilli = new Date(153222222000)
+        console.log(dobMilli.getMinutes());
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- creating an img element and add an imgae using js -->
+
+    <ol>
+      <li id="listItem">Noodles</li>
+    </ol>
+  </body>
+
+  <script>
+    let olli = document.querySelector("#listItem");
+    let li = document.createElement("li");
+    li.textContent = "Egg";
+    olli.appendChild(li);
+
+    let li1 = document.createElement("li");
+    li1.textContent = "Bread";
+    olli.appendChild(li1);
+
+    let li2 = document.createElement("li");
+    li2.textContent = "Meat";
+    olli.appendChild(li2);
+
+    // document.body.appendChild(olli);
+  </script>
+</html>

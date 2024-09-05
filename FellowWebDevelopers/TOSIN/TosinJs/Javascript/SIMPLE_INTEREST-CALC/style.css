@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Form-Container {
+  width: 550px;
+  height: 580px;
+  border: 2px solid #333;
+  position: relative;
+  left: 30%;
+  top: 10px;
+  backdrop-filter: blur(5.5px);
+  background-color: #ccc;
+}
+
+.Form-Container h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type="number"] {
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  font-size: 17px;
+  width: 80%;
+  outline: none;
+  border: none;
+}
+
+#result {
+  opacity: 0.8;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding: 15px;
+  background-color: #fff;
+  width: 80%;
+  outline: none;
+  border: none;
+  color: #191919;
+  font-size: 20px;
+}
+
+span {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calc {
+  cursor: pointer;
+  background-color: grey;
+  width: 90px;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.clear {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: grey;
+  width: 90px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Parse</title>
+</head>
+
+<body>
+    <script>
+        // Parsing JSON Data in Javascript
+        // In Javascript, u can easily parse JSON data received from the web server using the JSON.parse() method. This method parses a JSON string and constructs the Javascript value or object describes by the string. If the given string is not valid JSON, you will get a syntax error.
+        let myData = '{"id" : 3, "name" : "Paul", "age" : 23, "gender" : "Male"}';
+        let objData = JSON.parse(myData);
+        console.log(objData);
+        console.log(objData.id);
+        console.log(objData.name);
+        console.log(objData.gender);
+    </script>
+</body>
+
+</html>

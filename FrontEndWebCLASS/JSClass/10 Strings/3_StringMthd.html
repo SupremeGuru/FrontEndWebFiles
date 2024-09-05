@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+  </style>
+  <body>
+    <!-- The first method we are looking at the the length method -->
+    <script>
+      // the length property counts the total number of string you have including the spaces you leave between yur text
+      let userName = "John Doe";
+      let countName = userName.length;
+      console.log(countName);
+
+      // lower method
+      let lowerName = userName.toLowerCase();
+      console.log(lowerName);
+
+      // upper method
+      let upperName = userName.toUpperCase();
+      console.log(upperName);
+
+      // checking character method. It checks the particular character on the index you give. In the example below we gave an index 5 and the result should be letter D because J=0, O=1, H=2, N=3, the empty space=4, then the D=5
+      let charCheck = userName.charAt(5);
+      console.log(charCheck);
+
+      //This is to check the unicode character of anything. Every element has a default character. Personally i feel this method isn't very useful because i dont care much about unicode charcters
+      let unicharCheck = userName.charCodeAt(5);
+      console.log(unicharCheck);
+
+      //The next method is to concatinate (join two things)
+      let concatName = userName.concat(" Loves Mary");
+      console.log(concatName);
+
+      //The next method is to check what something ends with
+      let mymusic = " Lonely at the Top";
+      let endWith = mymusic.endsWith(" Top");
+      console.log(endWith);
+
+      //The next method is to check what something begins with. Be carefull, make sure you use the exact case (uppercase or lowercase). The below code would display false because it doesnt begin with 'Top'
+      let startWith = mymusic.startsWith(" Lonely");
+      console.log(startWith);
+    </script>
+  </body>
+</html>

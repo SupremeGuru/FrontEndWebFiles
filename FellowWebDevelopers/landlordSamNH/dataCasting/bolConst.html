@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(Boolean(0) + "<br>"); // Prints: false
+        document.write(Boolean(null) + "<br>");  // Prints: false
+        document.write(Boolean(false) + "<br>");  // Prints: false
+        document.write(Boolean(undefined) + "<br>");  // Prints: false
+        document.write(Boolean(NaN) + "<br>");  // Prints: false
+        document.write(Boolean("") + "<br>"); // Prints: false
+        document.write(Boolean("0") + "<br>"); // Prints: true
+        document.write(Boolean(1) + "<br>"); // Prints: true
+        document.write(Boolean(true) + "<br>"); // Prints: true
+        document.write(Boolean("false") + "<br>"); // Prints: true
+        document.write(Boolean("Hello World!") + "<br>"); // Prints: true
+        document.write(Boolean(" ")); // Prints: true
+        </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="mydiv">
+      <h1 class="h1" id="myh1" autocapitalize="on">
+        Lorem ipsum dolor sit amet.
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+        inventore voluptatum, debitis aperiam, et porro qui consectetur officia
+        exercitationem amet dolore odit vel dignissimos eius!
+      </p>
+    </div>
+
+    <script>
+      let myh1 = document.getElementById("myh1");
+      myh1.removeAttribute("autocapitalize");
+      myh1.removeAttribute("class");
+    </script>
+  </body>
+</html>

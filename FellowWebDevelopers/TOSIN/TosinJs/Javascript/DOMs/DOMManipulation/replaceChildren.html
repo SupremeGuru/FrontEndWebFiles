@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            inventore voluptatum, debitis aperiam, et porro qui consectetur officia
+            exercitationem amet dolore odit vel dignissimos eius!
+        </p>
+    </div>
+
+    <script>
+        let newh2 = document.createElement('h2')
+        let h2cont = document.createTextNode('Hello, Everyone, I am here!!!')
+        newh2.appendChild(h2cont);
+
+        let inpEle = document.createElement('input')
+            inpEle.setAttribute('type', 'password')
+            inpEle.setAttribute('placeholder', 'enter password');
+
+        let newh6 = document.createElement('h6')
+        let h6cont = document.createTextNode('Hello, Everyone, I am here!!!')
+        newh6.appendChild(h6cont);
+
+        let myDiv = document.getElementById("mydiv");
+
+        myDiv.replaceChildren(newh2, inpEle, newh6);
+    </script>
+</body>
+
+</html>

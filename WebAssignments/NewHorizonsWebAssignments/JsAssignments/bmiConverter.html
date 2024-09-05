@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>bmi Converter</title>
     <style>
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,14 +56,13 @@
             BMI = 703*(userWeightLbs/userHeightInch);
             document.getElementById("bmiOutput").innerHTML=`Your BMI is ${BMI}`
             console.log(`Your BMI is ${BMI}`);
-            if (BMI < 18.5) {
+            if (BMI < 18.5){
                 document.getElementById("bmiOutput").innerHTML=("You are underweight");
                 return console.log("You are underweight");
             }else if (BMI>=18.5 && BMI<=25){
                 document.getElementById("bmiOutput").innerHTML="You are normalweight";
                 return console.log("You are normalweight");
-            }else if (BMI > 25
-            ){
+            }else if (BMI > 25){
                 document.getElementById("bmiOutput").innerHTML="You are overweight(obese)";
                 return console.log("You are overweight(obese)");
             }else{
@@ -76,11 +75,11 @@
         if (unitsSelector === 1){    
         var userHeight = parseFloat(prompt("Your height in (m): "));
         var userWeight = parseFloat(prompt("Your weight in (kg): "));
-            bmiConverterInKgAndMetre(userWeight=0,userHeight=0);
+            bmiConverterInKgAndMetre(userWeight,userHeight);
         }else if(unitsSelector === 2){
             var userHeightInch = parseFloat(prompt("Your height in (inch): "));
             var userWeightLbs = parseFloat(prompt("Your weight in (Lbs): "));
-            bmiConverterInInchAndLbs(userWeightLbs=0,userHeightInch=0);
+            bmiConverterInInchAndLbs(userWeightLbs,userHeightInch);
         }else{
             document.getElementById("bmiOutput").innerHTML="Type 1 for weight in (kg) and height in (m):\nType 2 for weight in (lbs) and height in (inch):";
             console.log("Type 1 for weight in (kg) and height in (m):\nType 2 for weight in (lbs) and height in (inch):");

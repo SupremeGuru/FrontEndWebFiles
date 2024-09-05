@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let balance = 0.0
+        let accountNumber = '123456'
+        function saveMoney(amount,acc_Numb) {
+            if(acc_Numb === accountNumber){
+                balance = balance + amount
+                console.log(`You have saved ${amount} successfully`);
+            } else {
+                console.log('wrong account number');
+            }
+        }
+        saveMoney(2000, '123456');
+
+        function withdraw (amount){
+            balance = balance - amount
+            if(balance > amount){
+                console.log(`You have withdrawn ${amount} successfully`);
+            } else{
+                console.log('insufficient fund');
+            }
+            return 
+        }
+
+        function showBal(pin) {
+            let userpin = '4190'
+            if (pin !== userpin){
+            console.log('incorrect pin');
+            }
+            return balance
+        }
+
+        let amountWithdrawn = withdraw(1000)
+        console.log(amountWithdrawn);
+        saveMoney(200);
+
+        let amountWithdrawn2 = withdraw(700)
+        console.log(amountWithdrawn2);
+        saveMoney(100);
+
+        let myBal = showBal('4190');
+        console.log(myBal);
+        
+    </script>
+</body>
+</html>

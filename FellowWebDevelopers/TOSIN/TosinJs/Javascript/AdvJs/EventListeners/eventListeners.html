@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+
+<body>
+    <button id="myBtn">Click Me</button>
+
+    <script>
+        // Selecting button element
+        let btn = document.getElementById("myBtn");
+
+        // Defining custom functions
+        function sayHello() {
+            alert("Hi, how are you doing");
+        }
+
+        function setHoverColor() {
+            btn.style.backgroundColor = 'yellow'
+        }
+
+        function setNormalColor() {
+            btn.style.backgroundColor = '';
+        }
+
+        // Assigning event handlers to the buttons
+        btn.addEventListener('click', sayHello)
+        btn.addEventListener('mouseover', setHoverColor)
+        btn.addEventListener('mouseout', setNormalColor)
+    </script>
+</body>
+
+</html>

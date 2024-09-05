@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+        <script>
+          function submitData(e) {
+            e.preventDefault();
+            let userInp = document.getElementsByName("username");
+            let val1 = userInp[0].nodeValue;
+    
+            let passwordInp = document.getElementsByName("password");
+            let val2 = passwordInp[0].nodeValue;
+            console.log(val1 + ' ' +val2);
+        }
+        </script>
+        
+    <form onsubmit="submitData()">
+      <label for="username"
+        >User Name:
+        <input type="text" name="username"/>
+      </label>
+      <label for="password"
+        >Password:
+        <input type="password" name="password"/>
+        <button>Submit</button>
+      </label>
+    </form>
+
+  </body>
+</html>
